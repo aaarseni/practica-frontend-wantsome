@@ -1,0 +1,4 @@
+Definition of branch. (Entry 1 of 2) 1 botany : a natural subdivision of a plant stem especially : a secondary shoot or stem (such as a bough) arising from a main axis (as of a tree) pruning the tree's lower branches a swing mounted on a tree branch.
+
+
+In version control systems, a commit adds the latest changes to [part of] the source code to the repository, making these changes part of the head revision of the repository. Unlike commits in data management, commits in version control systems are kept in the repository indefinitely.
