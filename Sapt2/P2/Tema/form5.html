@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form5</title>
     <style>
-        table{
-            border:1px
+        table {
+            border: 1px
         }
-        td{
+
+        td {
             text-align: right;
         }
-        li{
+
+        li {
             list-style-type: circle;
         }
-        .div1{
+
+        .div1 {
             width: 200px;
             height: 50px;
             border: 1px solid blue;
             box-sizing: border-box;
-            position:inherit;
+            position: inherit;
         }
+
         .button {
-                background-color: #4CAF50;
-                border: none;
-                color: white;
-                padding: 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                }
-        .button1 {border-radius: 20px;}
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .button1 {
+            border-radius: 20px;
+        }
     </style>
 </head>
+
 <body>
     <form>
         <ul>
@@ -44,26 +53,26 @@
         </ul>
         <ul>
             <li>Please check all the emotions that apply to you:</li>
-                <ul>
-                    <li>Angry<input type="checkbox"></li>
-                    <li>Sad<input type="checkbox"></li>
-                    <li>Happy<input type="checkbox"></li>
-                    <li>Ambivalent<input type="checkbox"></li>
-                </ul>
+            <ul>
+                <li>Angry<input type="checkbox"></li>
+                <li>Sad<input type="checkbox"></li>
+                <li>Happy<input type="checkbox"></li>
+                <li>Ambivalent<input type="checkbox"></li>
+            </ul>
             </li>
         </ul>
         <ul>
             <li>How satisfied were you with our service?</li>
-                <ul>
-                    <li>Very satisfied<input type="checkbox"></li>
-                    <li>Satisfied<input type="checkbox"></li>
-                    <li>Didn't care<input type="checkbox"></li>
-                    <li>Very dissatisfied<input type="checkbox"></li>
-                </ul>
+            <ul>
+                <li>Very satisfied<input type="checkbox"></li>
+                <li>Satisfied<input type="checkbox"></li>
+                <li>Didn't care<input type="checkbox"></li>
+                <li>Very dissatisfied<input type="checkbox"></li>
+            </ul>
             </li>
         </ul>
-       <ul>
-            <li>Further comments:<input type="text"  style="height: 30px; position: relative;"></li>
+        <ul>
+            <li>Further comments:<input type="text" style="height: 30px; position: relative;"></li>
             <li>Bio photo:<input type="text" height="200"><button class="button1">Choose...</button></li>
             <li>Local visited:
                 <select>
@@ -76,4 +85,5 @@
         <li><button class="button1">submit</button></li>
     </form>
 </body>
+
 </html>

@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form2</title>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        .button1 {
+            border-radius: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <form>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label>Nume:</label>
+                    </td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Prenume:</label>
+                    </td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sexul</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" checked>
+                        <label for="female">Female</label>
+                    </td>
+                <tr>
+                    <td>
+                        <label>Varsta</label>
+                    </td>
+                    <td>
+                        <input type="number" max="85" min="18">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tara</label><br>
+                    </td>
+                    <td>
+                        <input type="text" value="Romania">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Oras</label>
+                    </td>
+                    <td>
+                        <input type="text" value="Iasi">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Adresa</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Cod postal</label>
+                    </td>
+                    <td>
+                        <input type="number" value="00000">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td>
+                        <input type="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Atasare CV:
+                    </td>
+                    <td>
+                        <button class="button1">Search</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" class="button1">
+                    </td>
+                    <td>
+                        <input type="reset" class="button1">
+                    </td>
+                </tr>
+        </div>
+    </form>
 </body>
+
 </html>
