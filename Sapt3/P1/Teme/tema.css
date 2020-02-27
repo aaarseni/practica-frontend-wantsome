@@ -1,0 +1,23 @@
+li:nth-child(2n+0){
+    color: green;
+}
+
+li:nth-child(3){
+    background-color: lightblue;
+}
+
+li:nth-child(1){
+    border-top: 1px solid green;
+}
+
+li:last-child{
+    border-bottom: 5px dotted blue;
+}
+
+a:nth-child(3):link{
+    color: red;
+}
+
+li a:last-child:hover{
+    color: gray;
+}

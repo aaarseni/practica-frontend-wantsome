@@ -1,0 +1,60 @@
+h1{
+    font-size:32px;
+}
+
+.main{
+    font-style: italic;
+}
+
+#primul{
+    text-decoration: underline;
+}
+
+a[href]{
+    text-decoration: none;
+}
+
+a[href="https://wantsome.ro"]{
+    color: green;
+}
+
+a[title="External link"]{
+    font-style: italic;
+}
+
+a:hover{
+    color:red
+}
+
+a:last-child:focus {
+    text-decoration: underline;
+}
+
+footer::after{
+    content: "Continut adaugat din CSS";
+    background-color: yellow;
+}
+
+p::first-letter{
+    font-size: 48px;
+}
+
+footer>span {
+    font-size: 14px;
+    color: blue;
+}
+
+#ovidiu-id{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
