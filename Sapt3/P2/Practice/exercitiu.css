@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    height: 4000px;
+  }
+
+  h1{
+      visibility: hidden;
+  }
+
+  h2{
+      display: none;
+  }
+
+  li{
+      display: inline;
+  }
+
+  .box1{
+      width: 400px;
+      height: 400px;
+      background-color: yellow;
+      position: relative;
+      float: left;
+  }
+
+  .box2{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    
+  }
+
+  .box3{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+

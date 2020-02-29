@@ -14,10 +14,38 @@ li:last-child{
     border-bottom: 5px dotted blue;
 }
 
-a:nth-child(3):link{
+ul li:nth-child(3) a{
     color: red;
 }
 
-li a:last-child:hover{
-    color: gray;
+ul li:nth-child(5) a{
+    color: red;
+ }
+
+ li:nth-child(5) a:hover{
+    color: grey;
+ }
+
+li:nth-child(3){
+    list-style: none;
+}
+
+li:nth-child(5){
+    list-style: none;
+}
+
+form  div:hover input[type=text]{
+    background-color: grey;
+}
+
+form  div:hover input[placeholder="first name"]{
+    color: green;
+}
+
+form  div:nth-last-of-type(1) input[type=text]{
+    color: green;
+}
+
+form  div:nth-last-of-type(2) input[type=text]{
+    color:blue;
 }
