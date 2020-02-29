@@ -1,6 +1,5 @@
 body {
     font-family: sans-serif;
-    height: 4000px;
   }
 
   h1{
@@ -16,29 +15,32 @@ body {
   }
 
   .box1{
-      width: 400px;
-      height: 400px;
+      width: 200px;
+      height: 200px;
       background-color: yellow;
-      position: relative;
-      float: left;
+      position: absolute;
+      margin-top: 40%;
+     margin-left:40%;
+     margin-right:40%;
+     margin-bottom: 40%;
   }
 
   .box2{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: blue;
     position: absolute;
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
     
   }
 
   .box3{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: green;
     position: absolute;
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 100px;
+    margin-left: 100px;
   }
 
