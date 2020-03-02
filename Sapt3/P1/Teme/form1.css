@@ -1,0 +1,43 @@
+section:hover{
+    border-radius: 4px;
+    border-style: solid;
+    display: inline-block;
+    touch-action: cross-slide-x;
+    padding: 6px;
+    transition: ease-in-out;
+    box-shadow: grey;
+    transition-duration: 1s;
+    background-color: lightblue;
+}
+
+input::selection{
+    background-color: yellow;
+    color: pink;
+}
+
+.aro{
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+
+#dacia{
+    color: green;
+    border-radius: 6px;
+    box-shadow: grey;
+    transition: linear;
+}
+
+#set:hover{
+color: hotpink;
+background-color: indigo;
+}
+
+#punct{
+    touch-action: pinch-zoom;
+}
+
+body{
+    background-color: black;
+}
