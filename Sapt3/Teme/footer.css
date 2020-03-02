@@ -1,0 +1,52 @@
+section{
+    border: 1px pink solid;
+    
+}
+
+ul{
+    width: 12%;
+    height: 130px;
+    border: solid 1px red;
+    color: #800080;
+    float: left;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 30px;
+    padding-top: 12px;
+    display: inline-table;
+}
+
+.section1{
+    float: inline-start;
+    flex-wrap: nowrap;
+    border: 1px solid green;
+    padding: 10px;
+    display: flex;
+}
+
+.section2{
+    float: inline-start;
+    flex-wrap: nowrap;
+    border: 1px solid blue;
+    padding: 10px;
+    display: flex;
+}
+
+.section3{
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    float: inline-end;
+}
+
+.foot{
+    display: flex;
+    display: block;
+    width: 100%;
+    border: red 1px solid;
+    padding-top: 30px;
+    text-align: center;
+    height: 100%;
+}
+
