@@ -40,7 +40,7 @@ ul{
     float: inline-end;
 }
 
-.foot{
+footer{
     display: flex;
     display: block;
     width: 100%;
