@@ -42,6 +42,25 @@ form  div:hover input[placeholder="first name"]{
     color: green;
 }
 
+form  div:hover input[placeholder="last name"]{
+    color: blue;
+}
+
+form  div:hover input[placeholder="password"]{
+    text-indent: -9999px;
+}
+
+input::selection{
+    background-color: yellow;
+    color: pink;
+}
+
+form  div:hover [value="SEND"]{
+    color: red;
+}
+
+
+
 form  div:nth-last-of-type(1) input[type=text]{
     color: green;
 }
