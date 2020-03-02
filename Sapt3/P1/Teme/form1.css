@@ -1,9 +1,9 @@
 section:hover{
-    border-radius: 4px;
+    border-radius: 15px;
     border-style: solid;
     display: inline-block;
     touch-action: cross-slide-x;
-    padding: 6px;
+    padding: 10px;
     transition: ease-in-out;
     box-shadow: grey;
     transition-duration: 1s;
