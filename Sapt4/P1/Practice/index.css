@@ -1,0 +1,57 @@
+header{
+    height: 100px;
+    background-color: purple;
+    color: wheat;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+}
+
+section{
+    background-color: thistle;
+    height: auto;
+    display: flex;
+}
+
+nav{
+    height: 400px;
+    width: 20%;
+    background-color: blue;
+    display: flex;
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+main{
+    width: 60%;
+    height: 400px;
+    background-color: grey;
+    display: flex;
+    font-size: 30px;
+    color:white;
+    justify-content: center;
+}
+
+.right{
+    height: 400px;
+    width: 20%;
+    background-color:green;
+    display: flex;
+    font-size: 30px;
+    color:white;
+    justify-content: center;
+}
+
+footer{
+
+       height: 100px;
+        background-color: darkorange;
+        color: wheat;
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+}
