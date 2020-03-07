@@ -1,6 +1,15 @@
-.giraffe{
-    height: 300px;
-    width: 600px;
-    border: solid 3px dotted;
+/*img{
+    
+    border: solid 3px dotted red;
     border-color: red;
+}*/
+
+div{
+    background-image: url("https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2561,x_0,y_0/dpr_1.5/c_limit,w_908/fl_lossy,q_auto/v1494008886/articles/2017/04/03/the-internet-s-most-famous-pregnant-giraffe-still-hasn-t-given-birth/170403-jones-pregnant-giraffe-tease_alsbhr");
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    border: 10px dotted red;
+    padding: 20px;
+    height: 400px;
+    width: 700px;
 }
