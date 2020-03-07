@@ -1,0 +1,18 @@
+@import 'mixins';
+@import 'variable';
+@import 'nesting';
+@import 'operators';
+
+body{
+    background: $blue;
+    @include carne;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: $font;
+}
+
+
+
+
+

@@ -59,12 +59,3 @@ form  div:hover [value="SEND"]{
     color: red;
 }
 
-
-
-form  div:nth-last-of-type(1) input[type=text]{
-    color: green;
-}
-
-form  div:nth-last-of-type(2) input[type=text]{
-    color:blue;
-}
