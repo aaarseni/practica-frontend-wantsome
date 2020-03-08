@@ -1,0 +1,73 @@
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+   .grid-container{
+       display: flex;
+        flex-direction: column;
+    }
+    .item1{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item2{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item3{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item4{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+
+    .castravete{
+        align-content: center;
+        align-items: baseline;
+        background-image: linear-gradient(to right, #f46b45, #eea849);
+      }
+  }
+
+  @media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item1{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item2{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item3{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+    .item4{
+        height: 25%;
+        background-origin: content-box;
+        background-size: 100%;
+    }
+
+    .castravete{
+        align-content: center;
+        align-items: baseline;
+        background-image: linear-gradient(to right, #fc00ff, #00dbde);
+      }
+}

@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.item1 { grid-area: stanga; }
+.item2 { grid-area: dreapta; }
+.item3 { grid-area: jos; }
+.item4 { grid-area: sus; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'stanga dreapta'
+    'jos sus';
+  grid-gap: 10px;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
+
+
+.item1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cranberry-brie-bites-horizontal-2-1540486091.jpg?crop=1.00xw:0.752xh;0,0.0216xh&resize=768:*);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.castravete{
+  align-content: center;
+  align-items: baseline;
+  background-image: linear-gradient(to right, #8E0E00, #1f1c18);
+}
+
+.item2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(https://live.staticflickr.com/65535/48439529456_deeb54f954_z.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 10px;
+  background-position: center;
+}
+
+.item3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(https://previews.123rf.com/images/temakud/temakud1807/temakud180700029/104563401-citrus-lemonad-av-apelsin-citron-och-grapefrukt-med-mynta-i-en-glas-karaff-p%C3%A5-en-gr%C3%B6n-bakgrund.jpg);
+  background-repeat: no-repeat;
+  padding-right: 10px;
+  background-position: center;
+}
+
+.item4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/29/16/junk-food-istock-zeljkosantrac.jpg?w968);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 10px;
+  background-position: center;
+}
