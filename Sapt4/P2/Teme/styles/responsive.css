@@ -1,38 +1,67 @@
 @media only screen 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2){
-body{
-    margin: 0;
-}
+    body{
+        margin: 0;
+    }
 
-.apple{
-    display: hidden;
-    background-color: salmon;
-    background-image: none;
-}
+    .apple{
+        background-color: salmon;
+        background-image: none;
+    }
+   #laptop{
+        display: none;
+    }
 
-.firstImage{
-    background-image: none;
-}
+    .firstImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .google{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+   }
+    #stateFoot{
+       margin: unset;
+   }
 
-.mapPc{
-    display: none;
-}
+    .tiles{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
 
-.generation{
-    display: flex;
-    flex-direction: column;
-}
+    .textPhone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: none;
+    }
 
-.tiles{
-    display: flex;
-    flex-direction: column;
-}
 
-.tilesInside{
-    display: flex;
-    flex-direction: column;
-}
+    #topPhone{
+       order: 2;
+    }
+    
+    h2{
+        margin: 0;
+    }
+
+    form{
+        padding: 4% 2%;
+    }
+
+    #contact{
+        padding: 1%;
+    }
+    .workPhone{
+        width: inherit;
+    }
+
   }
 
   @media only screen 
@@ -63,6 +92,9 @@ body{
         justify-content: center;
         box-sizing: initial;
    }
+   p > #stateFoot{
+    margin: 0;
+    }
 
     .tiles{
         display: flex;

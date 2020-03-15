@@ -7,6 +7,7 @@ body{
     margin: 0;
 }
 .apple{
+    display: flex;
     height: 25%;
     background-image: url(https://images.wallpaperscraft.com/image/night_city_cars_traffic_117247_2560x1440.jpg);
     background-position: center;
@@ -14,10 +15,7 @@ body{
     padding: 10px;
     margin: 0;
 }
-/*
-.button{grid-area: google;}
-.phone {grid-area: map;}
-*/
+
 
 .firstImage{
     height: 100%;
@@ -30,21 +28,22 @@ body{
     .map{
         display: flex;
         justify-content: flex-end;
-        width: 50%;
+       
     }
     
     .google{
-        height: 70%;
-        width: 50%;
+        height: 80%;
         color: $text-color;
         padding: 40px;
-        p{
+        /*#stateFoot{
             margin: 16px 20% 0 0;
-        }
+        }*/
         img{
             height: 30%;
         }
+
     }
+
 }
 
 .generation{
@@ -108,9 +107,7 @@ body{
         padding: 0 10%;
     }
 
-    .littleText{
-        padding: 10px 30px;
-    }
+
 
     .pic{
         width: 300px;
