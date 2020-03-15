@@ -1,0 +1,67 @@
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+body{
+    margin: 0;
+}
+
+.apple{
+    display: hidden;
+    background-color: salmon;
+    background-image: none;
+
+    .firstImage{
+        background-image: none;
+    }
+
+    .mapPc{
+        display: none;
+    }
+}
+
+
+.generation{
+    display: flex;
+    flex-direction: column;
+}
+
+.tiles{
+    display: flex;
+    flex-direction: column;
+}
+
+.tilesInside{
+    display: flex;
+    flex-direction: column;
+}
+  }
+
+  @media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    body{
+        margin: 0;
+    }
+
+    .apple{
+        display: hidden;
+        background-color: salmon;
+        background-image: none;
+    }
+    .mapPc{
+        display: none;
+    }
+
+    .tiles{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textPhone{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+

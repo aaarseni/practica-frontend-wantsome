@@ -1,0 +1,163 @@
+@import 'variables';
+
+
+
+body{
+    height: 200vh;
+    margin: 0;
+}
+.apple{
+    height: 25%;
+    background-image: url(https://images.wallpaperscraft.com/image/night_city_cars_traffic_117247_2560x1440.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 0;
+}
+/*
+.button{grid-area: google;}
+.phone {grid-area: map;}
+*/
+
+.firstImage{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+    
+    .map{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    
+    .google{
+        height: 70%;
+        width: 50%;
+        color: $text-color;
+        padding: 40px;
+        p{
+            margin: 16px 20% 0 0;
+        }
+        img{
+            height: 30%;
+        }
+    }
+}
+
+.generation{
+    background-color: $background-salmon;
+    
+    .tiles{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        height: auto;
+        margin: 0px 5px;
+    }
+
+    h1{
+        text-align: center;
+        padding: 20px;
+        color: $text-color;
+        margin: auto;
+    }
+    p{
+        padding: 20px;
+    }
+}
+
+.workPhone{
+    margin: 0;
+    background-color: #4F5273  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        color: $text-color;
+    }
+    p{
+        padding: 20px;
+        color: $text-color;
+    }
+
+    h2{
+        padding: 20px;
+        color: $text-color;
+    }
+
+    #work{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .textPhone{
+        display: flex;
+        background-color: #4F5273   ;
+        justify-content: center;
+        align-content: center;
+        padding: 0 10%;
+    }
+
+    .littleText{
+        padding: 10px 30px;
+    }
+
+    .pic{
+        width: 300px;
+        align-items: flex-end;
+    }
+
+    #backPhone{
+        background-color: #25273B ;
+
+    }
+
+    .bottomPhone{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 10px;
+    }
+}
+
+#contact{
+    background-color: $background-salmon;
+    margin: 0;
+    text-align: center;
+    color: $text-color;
+}
+
+form{
+    padding: 4% 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-salmon;
+    align-content: center;
+    color: $text-color;
+}
+
+input[type=submit] {
+    width: 15em;
+    height: 2em;
+    background-color:transparent;
+    border-radius: 7px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 10px;
+    height: 2%;
+    background-color: white;
+}
