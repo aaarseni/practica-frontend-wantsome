@@ -2,28 +2,28 @@
 - Primeste ca argumente doua numere
 - Returneaza numarul care este mai mare
 Apelati functia de doua ori si afisati pe ecran textul: “Numarul mai mare dintre 5 si 10 este 10“*/
-var  greatestNrBetween = function (num1, num2){
-    if(num1 > num2){
+var greatestNrBetween = function (num1, num2) {
+    if (num1 > num2) {
         return 'NUmarul mai mare dintre ' + num1 + ' si ' + num2 + ' este ' + num1 + '.';
     }
-        return 'NUmarul mai mare dintre ' + num1 + ' si ' + num2 + ' este ' + num2 + '.';
+    return 'NUmarul mai mare dintre ' + num1 + ' si ' + num2 + ' este ' + num2 + '.';
 };
 
-greatestNrBetween(4 , 9);
+greatestNrBetween(4, 9);
 
 /*2. Scrieti o functie de tip function expression asociata cu numele helloWorldInLang care:
 - Primeste ca argument codul unei limbi: “en”, “es”, “de”
 - Returneaza “Hello World” pentru limba corespunzatoare ( cel putin 3 limbi )
 - Daca limba nu este specificata, trebuie sa returneze textul pentru limba engleza
 Apelati functia pentru fiecare caz in parte.*/
-var  helloWorldInLang = function(lang){
-    if(lang === 'en'){
+var helloWorldInLang = function (lang) {
+    if (lang === 'en') {
         return 'Hello world';
-    }else if (lang === 'es'){
+    } else if (lang === 'es') {
         return 'Buenas dias';
-    }else if(lang === 'de'){
+    } else if (lang === 'de') {
         return 'Guten tag';
-    }else{
+    } else {
         return 'HELLO WORLD';
     }
 };
@@ -33,15 +33,15 @@ console.log(helloWorldInLang());
 - accepta doua argumente: un substantiv in engleza si un numar
 - returneaza numarul si forma de plural corespunzatoare substantivului, precum: “5 cats”, “1 dog”
 - adaugati cateva cazuri particulare pentru cuvinte precum “sheep” sau “geese”*/
-var  pluralizeWord = function(word, numb){
-    if(word === 'sheep' && numb > 1){
+var pluralizeWord = function (word, numb) {
+    if (word === 'sheep' && numb > 1) {
         return numb + ', ' + 'sheep';
-    }else if ( word === 'goose' && numb > 1){
+    } else if (word === 'goose' && numb > 1) {
         return numb + ', ' + 'geese';
-    }if(numb > 1){
-        return numb + ', '+ word + 's';
-    }else{
-        return numb +', ' + word;
+    } if (numb > 1) {
+        return numb + ', ' + word + 's';
+    } else {
+        return numb + ', ' + word;
     }
 };
 
@@ -53,15 +53,15 @@ corespunzatoare considerand urmatoarele criterii:
 - daca venitul anual se situeaza intre $50,000 - $99,999, taxa calculata trebuie sa fie 35%
 - pentru venit mai mare de $100,000, taxa se calculeaza ca procentaj de 40%
 Returnati un text care sa aiba un format asemanator: “Pentru un venit anual de x, aveti de platit taxe in valoare de y”*/
-function calculTaxe(salarAn){
-    if(salarAn <= 30000){
-        return  'Pentru un venit anual de ' + salarAn+ ', aveti de platit taxe in valoare de 0%';
-    }else if (salarAn >= 50000 && salarAn <= 99999){
+function calculTaxe(salarAn) {
+    if (salarAn <= 30000) {
+        return 'Pentru un venit anual de ' + salarAn + ', aveti de platit taxe in valoare de 0%';
+    } else if (salarAn >= 50000 && salarAn <= 99999) {
         var taxe = salarAn * 0.35;
-        return  'Pentru un venit anual de ' + salarAn+ ', aveti de platit taxe in valoare de ' + taxe +'.';
-    }else if( salarAn >= 100000){
+        return 'Pentru un venit anual de ' + salarAn + ', aveti de platit taxe in valoare de ' + taxe + '.';
+    } else if (salarAn >= 100000) {
         var taxe = salarAn * 0.4;
-        return 'Pentru un venit anual de ' + salarAn+ ', aveti de platit taxe in valoare de ' + taxe +'.';
+        return 'Pentru un venit anual de ' + salarAn + ', aveti de platit taxe in valoare de ' + taxe + '.';
     }
 }
 
@@ -78,33 +78,33 @@ afiseaza:
 - DD if points is greater than 30 and less than or equal to 40
 - FF if points is less than or equal to 30*/
 
-var sharePoints = function (points){
-    if( points > 90){
+var sharePoints = function (points) {
+    if (points > 90) {
         return 'AA';
-    }else if( points > 80 && points <= 90){
+    } else if (points > 80 && points <= 90) {
         return 'AB';
-    }else if(points > 70 && points <= 80){
+    } else if (points > 70 && points <= 80) {
         return 'BB';
-    }else if(points > 60 && points <= 70){
+    } else if (points > 60 && points <= 70) {
         return 'BC';
-    }else if( points > 50 && points <= 60){
+    } else if (points > 50 && points <= 60) {
         return 'CC';
-    }else if( points > 40 && points <= 50){
+    } else if (points > 40 && points <= 50) {
         return 'CD';
-    }else if(points > 30 && points <= 40){
+    } else if (points > 30 && points <= 40) {
         return 'DD';
-    }else (points <= 30);{
+    } else (points <= 30); {
         return 'FF'
     }
 }
 console.log(sharePoints(36));
 
-var somePoints = function (onePoint){
-    switch(onePoint){
+var somePoints = function (onePoint) {
+    switch (onePoint) {
         case onePoint > 90:
             console.log('AA');
             break;
-        case  onePoint > 80 && onePoint <= 90:
+        case onePoint > 80 && onePoint <= 90:
             console.log('AB');
             break;
         case onePoint > 70 && onePoint <= 80:
@@ -126,14 +126,14 @@ var somePoints = function (onePoint){
             console.log('FF');
     }
 }
-console.log(somePoints (34));
+console.log(somePoints(34));
 
 /*6. Scrieti o functie care testeaza daca o anumita data introdusa este in weekend: 
 */
-var testWeekend = function(date){
-    if(testWeekend.getDay === 6){   
+var testWeekend = function (date) {
+    if (testWeekend.getDay === 6) {
         return 'Weekend';
-    }if (testWeekend.getDay === 0){
+    } if (testWeekend.getDay === 0) {
         return 'Weekend';
     }
 };
@@ -146,23 +146,23 @@ console.log(testWeekend('nov', 13, 2020));
 // am incercat si cu while dar tot imi da eroare
 // mai jos este si o varianta cu Objects literals
 
-function genderCheck(cnp){
+function genderCheck(cnp) {
     var res = cnp;
-    if(res.slice(0,1) === 1){
+    if (res.slice(0, 1) === 1) {
         return 'Persoana verificata este de sexul M'
-    }if(res.slice(0,1) === 2){
+    } if (res.slice(0, 1) === 2) {
         return 'Persoana verificata este de sexul F'
     }
 };
 console.log(genderCheck());
 
 
-function gendCheck(codPers){
+function gendCheck(codPers) {
     var number;
-    function isMale(){
+    function isMale() {
         return number = 'Persoana verificata este de sexul M'
     }
-    function isFemale(){
+    function isFemale() {
         return number = 'Persoana verificata este de sexul F'
     }
     var codNUmeric = {
@@ -179,17 +179,17 @@ console.log(number);
 //Se introduc valorile pana la 10
 //Se stabileste valoarea E pentru punctaj intre 1-3, daca valoarea este intre 3-6 avem D, daca avem intre 7-8 obtinem un B, pentru 9 avem A si pentru 10 avem A+
 //Se returneaza nota si calificativul primit.
-var testPoint = function(myPoints){
-    if(myPoints >= 1 && myPoints <= 3){
-        return 'Calificatul corespunzator punctajului ' + myPoints +' este E.'
-    }if(myPoints >= 3 && myPoints <= 6){
-        return 'Calificatul corespunzator punctajului ' + myPoints +' este D.'
-    }if(myPoints >= 7 && myPoints <= 8){
-        return 'Calificatul corespunzator punctajului ' + myPoints +' este B.'
-    }if(myPoints === 9){
-        return 'Calificatul corespunzator punctajului ' + myPoints +' este A.'
-    }if(myPoints === 10){
-        return 'Calificatul corespunzator punctajului ' + myPoints +' este A+.'
+var testPoint = function (myPoints) {
+    if (myPoints >= 1 && myPoints <= 3) {
+        return 'Calificatul corespunzator punctajului ' + myPoints + ' este E.'
+    } if (myPoints >= 3 && myPoints <= 6) {
+        return 'Calificatul corespunzator punctajului ' + myPoints + ' este D.'
+    } if (myPoints >= 7 && myPoints <= 8) {
+        return 'Calificatul corespunzator punctajului ' + myPoints + ' este B.'
+    } if (myPoints === 9) {
+        return 'Calificatul corespunzator punctajului ' + myPoints + ' este A.'
+    } if (myPoints === 10) {
+        return 'Calificatul corespunzator punctajului ' + myPoints + ' este A+.'
     }
 }
 console.log(testPoint(5));
@@ -198,45 +198,45 @@ console.log(testPoint(5));
 //Creez o functie anonima si ii asignez un argument
 //Daca argumentul corespunde uneia din tarile producatoare de masini va afisa un mesaj
 
-var carType = function(myCar){
-    if(myCar === 'BMW'){
+var carType = function (myCar) {
+    if (myCar === 'BMW') {
         return 'Marca ' + myCar + ' se produce in Germania.';
-    }if(myCar === 'fiat'){
+    } if (myCar === 'fiat') {
         return 'Marca ' + myCar + ' se produce in Italia.';
-    }if(myCar === 'dacia'){
+    } if (myCar === 'dacia') {
         return 'Marca ' + myCar + ' se produce in Romania.';
-    }if(myCar === 'seat'){
+    } if (myCar === 'seat') {
         return 'Marca ' + myCar + ' se produce in Spania.';
-    }if(myCar === 'toyota'){
+    } if (myCar === 'toyota') {
         return 'Marca ' + myCar + ' se produce in Japonia.';
-    }if(myCar === 'tata'){
+    } if (myCar === 'tata') {
         return 'Marca ' + myCar + ' se produce in india.';
     }
     return "Marca este necunoscuta."
 }
 console.log(carType('fiat'));
 //----------------------------------------------
-function getCar (model){
+function getCar(model) {
     var aCar;
-    function aBmw(){
+    function aBmw() {
         return 'Marca ' + model + ' se produce in Germania.';
     }
-    function aFiat(){
+    function aFiat() {
         return 'Marca ' + model + ' se produce in Italia.';
     }
-    function aDacia(){
+    function aDacia() {
         return 'Marca ' + model + ' se produce in Romania.';
     }
-    function aSeat(){
+    function aSeat() {
         return 'Marca ' + model + ' se produce in Spania.';
     }
-    function aToyota(){
+    function aToyota() {
         return 'Marca ' + model + ' se produce in Japonia.';
     }
-    function aTata(){
+    function aTata() {
         return 'Marca ' + model + ' se produce in india.';
     }
-    function otherCars(){
+    function otherCars() {
         return "Marca este necunoscuta."
     }
 
@@ -255,25 +255,25 @@ var aCar = getCar('Bmw');
 console.log(aCar);
 
 //-----
-function typeCar(model){
-    switch(model){
+function typeCar(model) {
+    switch (model) {
         case 'Bmw':
-            return  'Marca ' + model + ' se produce in Germania.';
+            return 'Marca ' + model + ' se produce in Germania.';
             break;
         case 'Ferrari':
-            return  'Marca ' + model + ' se produce in Italia.';
+            return 'Marca ' + model + ' se produce in Italia.';
             break;
         case 'Mercedes':
-            return  'Marca ' + model + ' se produce in Germania.';
+            return 'Marca ' + model + ' se produce in Germania.';
             break;
         case 'Ford':
-            return  'Marca ' + model + ' se produce in USA.';
+            return 'Marca ' + model + ' se produce in USA.';
             break;
         case 'Land Rover':
-            return  'Marca ' + model + ' se produce in UK.';
+            return 'Marca ' + model + ' se produce in UK.';
             break;
         case 'Peugeot':
-            return  'Marca ' + model + ' se produce in Franta.';
+            return 'Marca ' + model + ' se produce in Franta.';
             break;
         default:
             return "Marca este necunoscuta."
@@ -298,13 +298,13 @@ var cars = [
 //afisez rezultatul
 
 var cars = [
-    {name: "John",  salary: 20000 },
+    { name: "John", salary: 20000 },
     { name: "Danny", salary: 30500 },
     { name: "Bekker", salary: 15000 }
-  ];
+];
 
-(function (){
-    cars.sort(function (a,b){
+(function () {
+    cars.sort(function (a, b) {
         return a.salary - b.salary;
     });
     console.log(cars);
