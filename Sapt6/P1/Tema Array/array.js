@@ -104,9 +104,9 @@ console.log(result + table.charAt(0).toUpperCase +  " reprezinta parte din proie
   // Pentru toate valorile din acele obiecte transformatile in litere mari.
   
   function food(item1, item2, item3){
-    this.item1 = item1.toUpperCase; //am 
-    this.item2 = item2.toUpperCase;
-    this.item3 = item3.toUpperCase;
+    this.item1 = item1.toUpperCase(); //am 
+    this.item2 = item2.toUpperCase();
+    this.item3 = item3.toUpperCase();
   }
   
   var lotOfFood = new food('ceafa', 'ceapa', 'dulciuri');
@@ -139,7 +139,7 @@ console.log(result);
 //Ex4: Folositi o metoda pe arrayuri avand in vedere variabila de mai jos, sa obtinem rezultatul "one and two and three and four and five"  join
 // fara sa modificati variabila initiala
 var numbers = ['one', 'two', 'three', 'four', 'five'];
-var result = numbers.join(' ');
+var result = numbers.join(' and ');
 console.log(result);
 
 //Ex5: Adaugati 2 elemente noi in arrayul de mai jos   push
@@ -170,9 +170,9 @@ arrayNumbers.sort(function(a, b){
 });
 console.log(arrayNumbers);
 arrayNumbers.reverse(function(a, b){
-  return a-b;
+  return b-a;
 });
-console.log(arrayNumbers);un
+console.log(arrayNumbers);
 
 
 //Ex11 : Aveti urmatorul array - folositi o functie care sa ia arrayul ca argument si sa-l returneze ordonat

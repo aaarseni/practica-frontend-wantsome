@@ -1,4 +1,12 @@
-var emailAddress = ('name@' + 'domain.com')
+//ex1
+
+var emailAddress = function(eMail){
+    var sign = eMail.split('@');
+    var secondSign = sign[1].split('.');
+    var result = sign[0] + '...' + secondSign[1];
+    return result;
+}
+console.log(emailAddress('arseni.alexandru@yahoo.com'));
 
 
 
@@ -24,6 +32,21 @@ myFunction("i am superman and batman");
 }
 
 console.log(firstString('abdDSH435'));
+//---
+function switchLetter(string){
+    var anArray = string.split('');
+    var i=0;
+    while (i < anArray.length){
+        if(anArray[i] == anArray[i].toUpperCase()) {
+            anArray[i] = anArray[i].toLowerCase();
+        }else{
+            anArray[i] = anArray[i].toUpperCase();
+        };
+        i++;
+    };
+    return anArray.join('');
+};
+console.log(switchLetter('sjkJKHDdnKsd'));
 
 
 //ex4
@@ -53,3 +76,6 @@ console.log(palindrom('cal'));
 //6. Implementati o functie care accepta ca argument un array compus din mai multe array-uri de valori numerice si
 // returneaza un array care contine ca si elemente cele mai mari numere din fiecare array
 
+function arraySort(array){
+    var item = [1,3,6,10,14,];
+}

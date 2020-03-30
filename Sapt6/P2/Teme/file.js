@@ -307,5 +307,5 @@ var cars = [
     cars.sort(function (a,b){
         return a.salary - b.salary;
     });
+    console.log(cars);
 })();
-console.log(cars);
