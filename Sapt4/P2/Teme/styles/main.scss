@@ -49,6 +49,8 @@ body{
 .generation{
     background-color: $background-salmon;
     
+
+
     .tiles{
         display: flex;
         flex-direction: row;
@@ -58,6 +60,15 @@ body{
         background-color: white;
         height: auto;
         margin: 0px 5px;
+
+        .tilesInside{
+            
+            #icon{
+                color:salmon;
+                padding: 1em;
+            }
+        }
+        
     }
 
     h1{
@@ -69,7 +80,9 @@ body{
     p{
         padding: 20px;
     }
+    
 }
+
 
 .workPhone{
     margin: 0;
