@@ -60,7 +60,7 @@ cvUser(text);
 var value = Object.values(userName);
 //console.log(value);
 for (i = 0; i < value.length; i++) {
-    console.log('Detali pentru urmatoarea persoana la interviu: ' + value[i]);
+    console.log('Detali pentru urmatoarea persoana la interviu: ' +value[i]);
 };
 
 //ex.4
@@ -206,14 +206,15 @@ while (i <= 10) {
 */
 for (i = 0; i <= 10; i++) {
     var newValue = i;
-    for (a = 1; a < newValue; a++) {
-        var customValue = newValue * i;
-        //a++;
-    };
-    //total = i * a;
-    console.log(a + ' * ' + i + ' = ' + customValue);
+    for (a = 0; a <= 9; a++) {
+        var otherValue = a;
+            console.log(a + ' * ' + i + ' = ' + customValue)
+        var customValue = newValue * otherValue
+        continue;
+    }
+    console.log(a + ' * ' + i + ' = ' + customValue)
 }
-
+//nu inteleg de ce rezultatul nu este cel dorit
 
 ///EX.4 
 /*
