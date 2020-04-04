@@ -1,4 +1,5 @@
-//1.ex
+/* //1. Scrieti o functie care accepta ca argument o valoare numerica si afiseaza de atatea ori pe ecran textul: “Sunt la iteratia
+numarul [index]” - Scrieti codul in doua variante */
 function iters(nr) {
     for (i = 0; i <= nr; i++) {
         console.log("Sunt la iteratia numarul " + i);
@@ -8,46 +9,35 @@ console.log(iters(10));
 //-----
 function iters(numb) {
     var i = 0;
-    var someIter = "Sunt la iteratia numarul " + i;
-    while (i <= numb) {
-        numb[i] += i;
+    while (i < numb) {
         i++;
+        console.log("Sunt la iteratia numarul " + i);
     }
-    return someIter;
 };
-console.log(iters(7));
+iters(6);
 
-//----
-function iters() {
-    var text = ''
-    var i = 0;
-    do {
-        text += "Sunt la iteratia numarul " + i;
-        i++;
-    } while (i <= numb);
-};
-console.log(text);
 
-//2.ex 
+/* 2. Scrieti o functie care accepta ca argument un array si afiseaza in consola elementele acestuia prin parcurgerea sa -
+Scrieti codul in doua variante */
 var animalArray = ['dog', 'cow', 'horse']
 var bigAnimal = function () {
-    for (i = 0, len = animalArray.length; i <= len; i++) {
-        return animalArray[i];
+    for (i = 0; i <= animalArray.length; i++) {
+        console.log(animalArray[i]);
     }
 };
-console.log(bigAnimal());
+bigAnimal();
 
 //---
 var bigAnimal = function () {     //declar o functie
     var animalArray = ['dog', 'cow', 'horse']; //am un array pt animale
     var text = '';
     var len = animalArray.length;   //stabilesc lungimea array unde mai jos il voi parcurge 
-    while (len++) {
-        text += animalArray[len] + '<br>'   ///vreau sa imi afiseze fiecare index in parte la fiecare trecere prin loop
+    while (text < animalArray.length) {
+        text += animalArray[len]   ///vreau sa imi afiseze fiecare index in parte la fiecare trecere prin loop
     }
-    return text;          ///sa imi returneze la fiecare loop rezultatul
+    return ;          ///sa imi returneze la fiecare loop rezultatul
 };
-console.log(text());    /// desi cred ca e implementat corect nu imi da rezultatul dorit
+console.log(bigAnimal());    /// desi cred ca e implementat corect nu imi da rezultatul dorit
 
 
 //3.ex
