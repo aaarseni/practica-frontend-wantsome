@@ -40,27 +40,28 @@ var bigAnimal = function () {     //declar o functie
 console.log(bigAnimal());  
 
 
-//3.ex
+/* //3. Scrieti o functie care accepta ca argument un obiect si afiseaza in consola elementele acestuia prin parcurgerea sa -
+scrieti codul in doua variante */
 
 var userName = {
     name: "alex",
     varsta: "20",
     job: "programator"
 }
-var text = 'Detalii urmatoarea persoana la interviu sunt: ';
+var text = 'Detali pentru urmatoarea persoana la interviu: ';
 function cvUser() {
     for (var key in userName) {
         text += userName[key] + ", ";
     };
+    console.log(text);
 };
-console.log(cvUser(text));
+cvUser(text);
 //---------
 var value = Object.values(userName);
-console.log(value);
+//console.log(value);
 for (i = 0; i < value.length; i++) {
-    console.log(value[i]);
+    console.log('Detali pentru urmatoarea persoana la interviu: ' + value[i]);
 };
-
 
 //ex.4
 //1
