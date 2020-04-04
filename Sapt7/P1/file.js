@@ -29,15 +29,15 @@ bigAnimal();
 
 //---
 var bigAnimal = function () {     //declar o functie
-    var animalArray = ['dog', 'cow', 'horse']; //am un array pt animale
+    var animalArray = [' dog', ' cow', ' horse', 'pork']; //am un array pt animale
     var text = '';
     var len = animalArray.length;   //stabilesc lungimea array unde mai jos il voi parcurge 
     while (text < animalArray.length) {
-        text += animalArray[len]   ///vreau sa imi afiseze fiecare index in parte la fiecare trecere prin loop
+        text += animalArray   ///vreau sa imi afiseze fiecare index in parte la fiecare trecere prin loop
     }
-    return ;          ///sa imi returneze la fiecare loop rezultatul
+    return text;          ///sa imi returneze la fiecare loop rezultatul
 };
-console.log(bigAnimal());    /// desi cred ca e implementat corect nu imi da rezultatul dorit
+console.log(bigAnimal());  
 
 
 //3.ex
