@@ -66,7 +66,7 @@ duplicates('hhhdrrstttsuuu')
 // Gasiti cel mai lung string intr-o fraza
 //findLongestString('Wantsome is Awsomeeee today') - output 'Awsomeeee'
 let longString = (string) => {
-    let oneString = string.split('');
+    let oneString = string.split(' ');
     let resultWord = 0;
     for (let i = 0; i < oneString.length; i++) {
         if (oneString[i].length > oneString[resultWord].length) {
@@ -75,7 +75,7 @@ let longString = (string) => {
     };
     return oneString[resultWord];
 }
-console.log(longString('Wantsome is Awsomeeee today'));
+console.log(longString('Wantsomee is Awsomeeeeeee today'));
 
 
 
