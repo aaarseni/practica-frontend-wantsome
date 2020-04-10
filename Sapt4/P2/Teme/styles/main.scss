@@ -35,9 +35,7 @@ body{
         height: 80%;
         color: $text-color;
         padding: 40px;
-        /*#stateFoot{
-            margin: 16px 20% 0 0;
-        }*/
+
         img{
             height: 30%;
         }
@@ -45,10 +43,35 @@ body{
     }
 
 }
-.fa.fa-address-book{
-    color: salmon;
-    height: 25px;
-    width: 24px;
+i.fa.fa-address-book{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+}
+i.fa.fa-id-badge{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+}
+i.fa.fa-amazon{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+}
+i.fa.fa-hand-rock-o{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+}
+i.fa.fa-hand-pointer-o{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+}
+i.fa.fa-hand-paper-o{
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
 }
 
 .generation{
@@ -94,13 +117,22 @@ body{
         color: $text-color;
     }
     p{
-        padding: 20px;
+        padding: 20px 20px 20px 52px;
         color: $text-color;
+        margin: 0;
     }
-
+    .littleText{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconAndTitile{
+        display: flex;
+        
+    }
     #icon{
-        padding: 20em 20em 20em 0px;
+        padding: 20px 20px 20px 9px;
         color: $text-color;
+        margin: 0;
     }
 
     #work{

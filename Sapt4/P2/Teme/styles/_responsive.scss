@@ -1,40 +1,58 @@
-@media only screen 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2){
-body{
-    margin: 0;
-}
 
-.apple{
-    display: hidden;
-    background-color: salmon;
-    background-image: none;
 
-    .firstImage{
-        background-image: none;
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px){
+    body{
+        margin: 0;
+        .apple{
+            display: hidden;
+            background-color: salmon;
+            background-image: none;
+        
+            .firstImage{
+                background-image: none;
+            }
+        
+            .mapPc{
+                display: none;
+            }
+        }
+        
+        .workPhone{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+                p{
+                    padding: 20px 0px;
+                }
+                
+                .iconAndTitile{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;;
+                    align-content: flex-end;
+                }
+            
+        }
+        
+            .generation{
+                display: flex;
+                flex-direction: column;
+        
+                .tiles{
+                    display: flex;
+                    flex-direction: column;
+                }
+        
+                .tilesInside{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
     }
-
-    .mapPc{
-        display: none;
-    }
 }
-
-
-.generation{
-    display: flex;
-    flex-direction: column;
-}
-
-.tiles{
-    display: flex;
-    flex-direction: column;
-}
-
-.tilesInside{
-    display: flex;
-    flex-direction: column;
-}
-  }
 
   @media only screen 
   and (min-device-width: 480px) 
@@ -42,26 +60,44 @@ body{
   and (-webkit-min-device-pixel-ratio: 1){
     body{
         margin: 0;
+        .apple{
+            display: hidden;
+            background-color: salmon;
+            background-image: none;
+        }
+        .mapPc{
+            display: none;
+        }
+    
+        .tiles{
+            display: flex;
+            flex-direction: column;
+        }
+        .workPhone{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+                p{
+                    padding: 20px 0px 20px 0px;
+                }
+                
+                .iconAndTitile{
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            
+        }
     }
+}
 
-    .apple{
-        display: hidden;
-        background-color: salmon;
-        background-image: none;
+@media only screen and (min-width: 768px) {
+    .workPhone{
+        .iconAndTitile{
+            flex-direction: row;
+        }
+        p{
+            padding: 20px 20px 20px 52px;
+        }
     }
-    .mapPc{
-        display: none;
-    }
-
-    .tiles{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .textPhone{
-        display: flex;
-        flex-direction: column;
-    }
-
-  }
-
+}
