@@ -24,10 +24,18 @@ console.log(checkReversString('Incerc sa invat algoritmica'));
 /*
 4. Implementati o functie care accepta ca parametru un string si inlocuieste fiecare litera din acesta cu urmatoarea litera din alfabet
 */
-const switchLetters = string => string.replace(/[a-zA-Z]/g, function (i) {
-    return String.fromCharCode(i.charCodeAt(0) + 1);
-});
-console.log(switchLetters('abba'));
+const switchLetters = string =>
+    string.replace(/[a-zA-Z]/g, function (i) {
+        switch (i) {
+            case 'z':
+                return 'a';
+            case 'Z':
+                return 'A';
+            default:
+                return String.fromCharCode(i.charCodeAt(0) + 1);
+        }
+    })
+console.log(switchLetters('abcdefzzzzzZ'))
 /*
 5. Implementati o functie convertToTime care accepta ca parametru o valoare numerica si o converteste la numarul de ore si minute corespunzatoare.
 Exemplu: input: 64  ->  output: 1:4

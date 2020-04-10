@@ -100,7 +100,7 @@ var sharePoints = function (points) {
 console.log(sharePoints(36));
 
 var somePoints = function (onePoint) {
-    switch (onePoint) {
+    switch (true) {
         case onePoint > 90:
             console.log('AA');
             break;
@@ -154,7 +154,7 @@ function genderCheck(cnp) {
         return 'Persoana verificata este de sexul F'
     }
 };
-console.log(genderCheck());
+console.log(genderCheck('1234556'));
 
 
 function gendCheck(codPers) {

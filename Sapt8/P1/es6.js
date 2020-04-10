@@ -3,36 +3,33 @@
 //ex myFunction(10, 5) - output 15 // myFunction(10,10) - output 100 */
 function calcule(nr, numb) {
     if (nr != numb) {
-        let prod = nr + numb;
-        return prod;
-    };
+        let prod = nr + numb
+        return prod
+    }
     //console.log(prod);
 
     if (nr === numb) {
-        let sumProd = nr + numb;
-        let bestSum = sumProd * 5;
-        return bestSum;
+        let sumProd = nr + numb
+        let bestSum = sumProd * 5
+        return bestSum
     }
-    console.log(bestSum);
 }
 console.log(calcule(4, 4))
 
 //Ex2
 //Vreau sa am o functie care sa returneze true daca ambele numere sunt egale cu 30 sau daca suma lor este egala cu 30
-//ex testFunction(30, 30) - true 
+//ex testFunction(30, 30) - true
 //testFunction(15,15) - true
 //testFunction(10, 15) - false
 
 function returnSomething(nr1, nr2) {
     if (nr1 === 30 && nr2 === 30) {
-        return true;
-    };
-    if (nr1 + nr2 === 30) {
-        return true;
-    } else {
-        return false;
+        return true
     }
-    //return returnSomething;
+    if (nr1 + nr2 === 30) {
+        return true
+    }
+    return false
 }
 console.log(returnSomething(30, 30))
 
@@ -42,13 +39,12 @@ console.log(returnSomething(30, 30))
 //checkString('isEasy') - JSisEasy
 //checkString(null) - JS
 function newString(string) {
-
     if (string.includes('JS')) {
-        return otherString;
+        return otherString
     } else {
-        return `JS${string}`;
+        return `JS${string}`
     }
-};
+}
 console.log(newString('jswantsome'))
 
 //Ex4
@@ -56,8 +52,8 @@ console.log(newString('jswantsome'))
 //removeDuplicates('aabcdeef') - 'abcdef'
 //removeDuplicates(122334) - 1234
 
-const duplicates = (numb) => {
-    let cancelLetters = [...new Set(numb)];
+const duplicates = numb => {
+    let cancelLetters = [...new Set(numb)]
     console.log(cancelLetters.join(''))
 }
 duplicates('hhhdrrstttsuuu')
@@ -65,29 +61,27 @@ duplicates('hhhdrrstttsuuu')
 //Ex5
 // Gasiti cel mai lung string intr-o fraza
 //findLongestString('Wantsome is Awsomeeee today') - output 'Awsomeeee'
-let longString = (string) => {
-    let oneString = string.split(' ');
-    let resultWord = 0;
+let longString = string => {
+    let oneString = string.split(' ')
+    let resultWord = 0
     for (let i = 0; i < oneString.length; i++) {
         if (oneString[i].length > oneString[resultWord].length) {
-            resultWord = i;
+            resultWord = i
         }
-    };
-    return oneString[resultWord];
+    }
+    return oneString[resultWord]
 }
-console.log(longString('Wantsomee is Awsomeeeeeee today'));
-
-
+console.log(longString('Wantsomee is Awsomeeeeeee today'))
 
 //Ex6
 //Scrieti o functie care sa aiba output-ul asta
-// *  
-// * *  
-// * * *  
-// * * * *  
-// * * * * *  
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
 const creatApiramid = () => {
-    let numberOfRow = 5
+    const numberOfRow = 5
     let result = ''
     for (let i = 1; i <= numberOfRow; i++) {
         for (let j = 1; j <= i; j++) {
@@ -102,7 +96,7 @@ const creatApiramid = () => {
 creatApiramid()
 
 //ex7
-// append any negative numbers found in the numbers array 
+// append any negative numbers found in the numbers array
 // into the negativeNumbers array constant variable above
 const negativeNumbers = []
 
@@ -115,7 +109,6 @@ function extractNegativeNumbers(numbers) {
     return negativeNumbers
 }
 console.log(extractNegativeNumbers([1, 2, -5, 4, -6]))
-
 
 //ex8
 //Avem o functie cu 2 numere si un operator, vrem sa obtinem rezultatul in functie de operator - "add", "substract", "multiply", "divide"
@@ -146,14 +139,14 @@ console.log(someCalc(9, 4, 'divide'))
 // isDiv(15) => "BOTH"
 // isDiv(9)=> "THREE"
 // isDiv(7)=> 7
-const checkDivide = (oneNumber) => {
+const checkDivide = oneNumber => {
     if (oneNumber % 3 == 0 && oneNumber % 5 == 0) {
-        return 'BOTH';
+        return 'BOTH'
     }
     if (oneNumber % 3 == 0) {
-        return 'THREE';
+        return 'THREE'
     } else {
-        return oneNumber;
+        return oneNumber
     }
 }
 console.log(checkDivide(15))
@@ -161,11 +154,11 @@ console.log(checkDivide(9))
 console.log(checkDivide(7))
 
 //Master exercises
-//Ex9 
+//Ex9
 // Vreau sa pot afisa data si ziua sub urmatorul format:
 // Azi este : Luni. +
 // Ora este : 20 PM : 30 : 38
-let today = new Date();
+let today = new Date()
 const days = [
     'Azi este : Duminica',
     'Azi este : luni',
@@ -173,7 +166,7 @@ const days = [
     'Azi este : Miercuri',
     'Azi este : Joi',
     'Azi este : Vineri',
-    'Azi este : Duminica'
+    'Azi este : Duminica',
 ]
 
 const d = new Date()
@@ -203,41 +196,40 @@ if (hour === 0 && prepand === ' AM ') {
         prepand = ' AM'
     }
 }
-console.log(
-    'Ora este : ' + hour + prepand + ' : ' + minute + ' : ' + second
-)
+console.log('Ora este : ' + hour + prepand + ' : ' + minute + ' : ' + second)
 
 //ex10
 // ATM-urile iti dau voie sa folosesti pin-uri din 4 sau 6 cifre. Faceti o functie care sa returneze true daca pin-ul e corect si false daca e gresit
 // validPin("1234") => true
 // validPin("12345") => false
 // validPin("z23f") => false
-const atmCheck = (pinCheck) => {
-    if (pinCheck === '6969' || pinCheck === '696969') {
-        return true;
+const atmCheck = pinCheck => {
+    let check4digits = pinCheck.match(/^\b\d{4}\b$/)
+    let check6digits = pinCheck.match(/^\b\d{6}\b$/)
+    if (pinCheck == check4digits || pinCheck == check6digits) {
+        return true
     }
-    return false;
+    return false
 }
-console.log(atmCheck('6969'))
+console.log(atmCheck('123456'))
 
-//ex11 
+//ex11
 //Folosind regex vreau sa scot toate vocalele dintr-un string
 // removeVowels("Hey I am developer") => "Hy m dvlpr"
-const removeVowels = (string) => {
-    let vowels = string.toLowerCase();
-    return vowels.replace(/[aeiou]/g, '');
-};
-console.log(removeVowels('Hey I am developer'));
+const removeVowels = string => {
+    const vowels = string.toLowerCase()
+    return vowels.replace(/[aeiou]/g, '')
+}
+console.log(removeVowels('Hey I am developer'))
 
 //ex12
 //Vreau sa am o functie care sa verifice daca un numar este patrat
-const isSquareNumber = (number) => {
-    return number = !0 && Math.sqrt(number) % 1 === 0;
-};
+const isSquareNumber = number => {
+    return number !== 0 && Math.sqrt(number) % 1 === 0
+}
 console.log(isSquareNumber(-1))
 console.log(isSquareNumber(25))
 console.log(isSquareNumber(3))
-
 
 //ex13
 // Vreau sa am o functie care sa verifice daca un cuvant este o anagrama- daca toate literele din primul string se regasesc in al doilea
@@ -248,10 +240,9 @@ const anagramCheck = (word1, word2) => {
     word2 = word2.replace(/[^\w]/g, '').toLowerCase()
 
     return sortString(word1) === sortString(word2)
-};
+}
 
-function sortString(string) {
-    return string.split('').sort().join('')
-};
+const sortString = (string) => string.split('').sort().join('');
+    
 console.log(anagramCheck('School master', 'The class room'))
-console.log(anagramCheck("silent", "liste"))
+console.log(anagramCheck('silent', 'liste'))

@@ -33,7 +33,7 @@
 }
 .fa-4x {
   font-size: 4em;
-}
+}s
 .fa-5x {
   font-size: 5em;
 }
@@ -176,7 +176,7 @@
   font-size: 2em;
 }
 .fa-inverse {
-  color: #ffffff;
+  color: #FA8072;
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
