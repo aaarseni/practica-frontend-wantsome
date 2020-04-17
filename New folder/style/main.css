@@ -222,7 +222,7 @@
   animation-iteration-count: 1;
 }
 
-input {
+.insert {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50px;
@@ -361,9 +361,11 @@ body {
   display: grid;
   -ms-grid-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  border-bottom: black;
+  border-bottom: 1px solid lightgray;
   -ms-grid-rows: 50px 1fr;
       grid-template-rows: 50px 1fr;
+  background: #EEFAF6;
+  border-radius: 20px 20px 0px 0px;
 }
 
 /* .searchBar{
@@ -381,7 +383,6 @@ body {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
 } */
 .shopBagAndBell {
   -ms-grid-column: 1;
