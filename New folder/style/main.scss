@@ -332,7 +332,7 @@ body{
     border: 1px solid yellowgreen;
     display: grid;
     grid-template-columns: 50px auto 50px;
-    grid-template-rows: 155px auto auto;
+    grid-template-rows: 155px 20px auto;
 
     .myOption{
         grid-column: 2 /3;

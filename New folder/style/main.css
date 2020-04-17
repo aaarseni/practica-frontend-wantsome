@@ -765,8 +765,8 @@ body {
   display: grid;
   -ms-grid-columns: 50px auto 50px;
       grid-template-columns: 50px auto 50px;
-  -ms-grid-rows: 155px auto auto;
-      grid-template-rows: 155px auto auto;
+  -ms-grid-rows: 155px 20px auto;
+      grid-template-rows: 155px 20px auto;
 }
 
 .infoSection .myOption {
