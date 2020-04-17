@@ -1,4 +1,5 @@
 @import 'topButtons';
+@import 'variables';
 
 
 body{
@@ -36,7 +37,7 @@ body{
     grid-row: 1;
     align-self: center;
     border: none;
-    
+    cursor: pointer;
     
 }
 /* .searchBar{
@@ -69,6 +70,7 @@ body{
     border-bottom: 1px solid lightgray;
     color: #2bb470;
     font-size: 18px;
+    cursor: pointer;
     
     .aBell{
         grid-column: 4 / 5;
@@ -76,6 +78,7 @@ body{
         justify-items: end;
         color: #2bb470;
         font-size: 20px;
+        cursor: pointer;
     }
 }
 .helloName{
@@ -102,7 +105,7 @@ body{
             grid-row: 3 / 4;
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #828282;
+            color: $textColor;
         }
     }
 
@@ -114,6 +117,7 @@ body{
         font-weight: normal;
         text-decoration: inherit;
         margin-left:5px;
+        cursor: pointer;
     }
 
     .eatMenu{
@@ -125,6 +129,7 @@ body{
             grid-column: 2 / 4;
             margin: 35px 0px;
             border-radius: 10px;
+            cursor: pointer;
             background: #2bb470;
             color: #ddebe6;
             height: 50%;
@@ -146,7 +151,7 @@ body{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 10px 0px;
             align-self: center;
-            color: #828282;
+            color: $textColor;
         }
         i.fa.fa-plus{
             font-size: 18px;
@@ -158,14 +163,15 @@ body{
             border-radius: 30px;
             border: none;
             background: none;
-            color: #828282;
+            color: $textColor;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
             }
-            .btnOverView:hover{
-                background: #EEFAF6;
-                color: black;
+                .btnOverView:hover{
+                    background: #EEFAF6;
+                    color: black;
                 i.fa.fa-eye{
                     color: #2bb470;
                 }
@@ -174,16 +180,17 @@ body{
             grid-column: 2 /4;
             grid-row: 4 / 5;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnMeal:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnMeal:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-cutlery{
                     color: #2bb470;
                 }
@@ -192,16 +199,17 @@ body{
             grid-column: 2 /4;
             grid-row: 5 / 6;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnUserAcc:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnUserAcc:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-user-circle{
                     color: #2bb470;
                 }
@@ -210,16 +218,17 @@ body{
             grid-column: 2 /4;
             grid-row: 6 / 7;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnHistory:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnHistory:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-history{
                     color: #2bb470;
                 }
@@ -228,16 +237,17 @@ body{
             grid-column: 2 /4;
             grid-row: 7 / 8;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnCalendar:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnCalendar:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-calendar-check-o{
                     color: #2bb470;
                 }
@@ -251,16 +261,17 @@ body{
             grid-column: 2 /4;
             grid-row: 10 / 11;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnReviews:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnReviews:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-commenting{
                     color: #2bb470;
                 }
@@ -270,16 +281,17 @@ body{
             grid-column: 2 /4;
             grid-row: 11 / 12;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             border: none;
             background: none;
             margin: 10px 0px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: start;
+            cursor: pointer;
         }
-        .btnUserRecipies:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnUserRecipies:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-user-circle-o{
                     color: #2bb470;
                 }
@@ -289,17 +301,18 @@ body{
             grid-column: 3 /4;
             grid-row: 12 / 13;
             border-radius: 30px;
-            color: #828282;
+            color: $textColor;
             height: 30px;
             border: none;
             margin: 40px 0px;
             background: none;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
             
         }
-        .btnLogOut:hover{
-            background: #EEFAF6;
-            color: black;
+            .btnLogOut:hover{
+                background: #EEFAF6;
+                color: black;
                 i.fa.fa-power-off{
                     color: #2bb470;
                 }
@@ -323,6 +336,67 @@ body{
 
     .myOption{
         grid-column: 2 /3;
+        display: grid;
+        grid-template-columns: 2fr auto auto;
+        grid-template-rows: 100px 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .myOptionMealTitle{
+            font-size: 30px;
+            grid-row: 1;
+            grid-column: 1;
+            margin: 0;
+            align-self: flex-end;
+        }
+        .dragAndDrop{
+            grid-row: 2;
+            grid-column: 1;
+            margin: 0;
+            align-self: flex-end;
+            font-size: 14px;
+            color: $textColor;
+        }
+        .compareMeal{
+            align-self: flex-end;
+            background-color: transparent;
+            border: 1px solid lightgray;
+            color: black;
+            padding: 10px 15px;
+            text-align: center;
+            height: 37px;
+            width: 167px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+            .compareMeal:hover{
+                color: #2bb470;
+                background-color: #C2EEDD;
+            }
+        .filter{
+            align-self: flex-end;
+            background-color: transparent;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            height: 37px;
+            width: 100px;
+            color: black;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 4px;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+            .filter:hover{
+                color: #2bb470;
+                background-color: #C2EEDD;
+            }
     }
 }
 

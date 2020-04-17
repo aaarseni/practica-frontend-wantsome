@@ -378,6 +378,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   border: none;
+  cursor: pointer;
 }
 
 /* .searchBar{
@@ -413,6 +414,7 @@ body {
   border-bottom: 1px solid lightgray;
   color: #2bb470;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .shopBagAndBell .aBell {
@@ -425,6 +427,7 @@ body {
   justify-items: end;
   color: #2bb470;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .helloName {
@@ -484,6 +487,7 @@ body {
   font-weight: normal;
   text-decoration: inherit;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .helloName .eatMenu {
@@ -502,6 +506,7 @@ body {
   grid-column: 2 / 4;
   margin: 35px 0px;
   border-radius: 10px;
+  cursor: pointer;
   background: #2bb470;
   color: #ddebe6;
   height: 50%;
@@ -547,6 +552,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnOverView:hover {
@@ -572,6 +578,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnMeal:hover {
@@ -597,6 +604,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnUserAcc:hover {
@@ -622,6 +630,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnHistory:hover {
@@ -647,6 +656,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnCalendar:hover {
@@ -678,6 +688,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnReviews:hover {
@@ -703,6 +714,7 @@ body {
   margin: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: start;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnUserRecipies:hover {
@@ -728,6 +740,7 @@ body {
   margin: 40px 0px;
   background: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
 }
 
 .helloName .eatMenu .btnLogOut:hover {
@@ -761,6 +774,83 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 /3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr auto auto;
+      grid-template-columns: 2fr auto auto;
+  -ms-grid-rows: 100px 25px;
+      grid-template-rows: 100px 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoSection .myOption .myOptionMealTitle {
+  font-size: 30px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.infoSection .myOption .dragAndDrop {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 14px;
+  color: #828282;
+}
+
+.infoSection .myOption .compareMeal {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  height: 37px;
+  width: 167px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoSection .myOption .compareMeal:hover {
+  color: #2bb470;
+  background-color: #C2EEDD;
+}
+
+.infoSection .myOption .filter {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 37px;
+  width: 100px;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoSection .myOption .filter:hover {
+  color: #2bb470;
+  background-color: #C2EEDD;
 }
 
 .widgets {
