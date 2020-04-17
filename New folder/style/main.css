@@ -757,9 +757,6 @@ body {
 }
 
 .infoSection {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
   -ms-grid-column: 4;
   -ms-grid-column-span: 6;
   grid-column: 4/10;
@@ -768,6 +765,8 @@ body {
   display: grid;
   -ms-grid-columns: 50px auto 50px;
       grid-template-columns: 50px auto 50px;
+  -ms-grid-rows: 155px auto auto;
+      grid-template-rows: 155px auto auto;
 }
 
 .infoSection .myOption {
@@ -804,6 +803,11 @@ body {
       align-self: flex-end;
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .myOption .dragAndDrop .fa.fa-info-circle:hover {
+  color: #2bb470;
+  cursor: pointer;
 }
 
 .infoSection .myOption .compareMeal {
@@ -851,6 +855,41 @@ body {
 .infoSection .myOption .filter:hover {
   color: #2bb470;
   background-color: #C2EEDD;
+}
+
+.infoSection .typesOfCusines {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto 4fr;
+      grid-template-columns: auto auto auto auto auto auto auto 4fr;
+  -ms-grid-rows: 20px;
+      grid-template-rows: 20px;
+}
+
+.infoSection .typesOfCusines .selectCusines {
+  border: none;
+  background-color: transparent;
+  color: #828282;
+  cursor: pointer;
+}
+
+.infoSection .typesOfCusines .selectCusines:hover {
+  color: black;
+}
+
+.infoSection .typesOfCusines .mainSort {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  color: #828282;
+}
+
+.infoSection .typesOfCusines .mainSort .sortBy {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .widgets {

@@ -328,11 +328,11 @@ body{
 }
 
 .infoSection{
-    grid-row: 2/3;
     grid-column: 4/10;
     border: 1px solid yellowgreen;
     display: grid;
     grid-template-columns: 50px auto 50px;
+    grid-template-rows: 155px auto auto;
 
     .myOption{
         grid-column: 2 /3;
@@ -355,6 +355,11 @@ body{
             align-self: flex-end;
             font-size: 14px;
             color: $textColor;
+
+            .fa.fa-info-circle:hover{
+                color: #2bb470;
+                cursor: pointer;
+            }
         }
         .compareMeal{
             align-self: flex-end;
@@ -397,6 +402,33 @@ body{
                 color: #2bb470;
                 background-color: #C2EEDD;
             }
+    }
+
+    .typesOfCusines{
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto 4fr;
+        grid-template-rows: 20px;
+
+        .selectCusines{
+            border: none;
+            background-color: transparent;
+            color: $textColor;
+            cursor: pointer;
+        }
+            .selectCusines:hover{
+                color: black;
+            }
+        .mainSort{
+            justify-self: end;
+            color: $textColor;
+
+            .sortBy{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
     }
 }
 
