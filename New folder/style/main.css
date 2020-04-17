@@ -757,6 +757,12 @@ body {
       grid-template-columns: 50px auto 50px;
 }
 
+.infoSection .myOption {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /3;
+}
+
 .widgets {
   display: -ms-grid;
   display: grid;

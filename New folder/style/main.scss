@@ -320,6 +320,10 @@ body{
     border: 1px solid yellowgreen;
     display: grid;
     grid-template-columns: 50px auto 50px;
+
+    .myOption{
+        grid-column: 2 /3;
+    }
 }
 
 .widgets{
