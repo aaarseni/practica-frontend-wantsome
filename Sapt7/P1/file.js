@@ -37,7 +37,7 @@ var bigAnimal = function () {     //declar o functie
     }
     return text;          ///sa imi returneze la fiecare loop rezultatul
 };
-console.log(bigAnimal());  
+console.log(bigAnimal());
 
 
 /* //3. Scrieti o functie care accepta ca argument un obiect si afiseaza in consola elementele acestuia prin parcurgerea sa -
@@ -53,14 +53,14 @@ function cvUser() {
     for (var key in userName) {
         text += userName[key] + ", ";
     };
-    console.log(text);
+    return text;
 };
-cvUser(text);
+console.log(cvUser(text));
 //---------
 var value = Object.values(userName);
 //console.log(value);
 for (i = 0; i < value.length; i++) {
-    console.log('Detali pentru urmatoarea persoana la interviu: ' +value[i]);
+    console.log('Detali pentru urmatoarea persoana la interviu: ' + value[i]);
 };
 
 //ex.4
@@ -208,7 +208,7 @@ for (i = 0; i <= 10; i++) {
     var newValue = i;
     for (a = 0; a <= 9; a++) {
         var otherValue = a;
-            console.log(a + ' * ' + i + ' = ' + customValue)
+        console.log(a + ' * ' + i + ' = ' + customValue)
         var customValue = newValue * otherValue
         continue;
     }

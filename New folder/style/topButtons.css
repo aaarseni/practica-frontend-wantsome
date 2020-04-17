@@ -1,0 +1,199 @@
+.meatOrVeganButton {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-column: 10 /13;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .meatOrVeganButton input[type='checkbox'],
+  .meatOrVeganButton input[type='radio'] {
+    --active: #2bb470;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #2bb470;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 15px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s;
+    transition: background .3s, border-color .3s, box-shadow .2s, -webkit-box-shadow .2s;
+  }
+  .meatOrVeganButton input[type='checkbox']:after,
+  .meatOrVeganButton input[type='radio']:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  .meatOrVeganButton input[type='checkbox']:checked,
+  .meatOrVeganButton input[type='radio']:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  .meatOrVeganButton input[type='checkbox']:disabled,
+  .meatOrVeganButton input[type='radio']:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: .9;
+  }
+  .meatOrVeganButton input[type='checkbox']:disabled:checked,
+  .meatOrVeganButton input[type='radio']:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  .meatOrVeganButton input[type='checkbox']:disabled + label,
+  .meatOrVeganButton input[type='radio']:disabled + label {
+    cursor: not-allowed;
+  }
+  .meatOrVeganButton input[type='checkbox']:hover:not(:checked):not(:disabled),
+  .meatOrVeganButton input[type='radio']:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  .meatOrVeganButton input[type='checkbox']:focus,
+  .meatOrVeganButton input[type='radio']:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+            box-shadow: 0 0 0 var(--focus);
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch),
+  .meatOrVeganButton input[type='radio']:not(.switch) {
+    width: 15px;
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch):after,
+  .meatOrVeganButton input[type='radio']:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch):checked,
+  .meatOrVeganButton input[type='radio']:not(.switch):checked {
+    --o: 1;
+  }
+  .meatOrVeganButton input[type='checkbox'] + label,
+  .meatOrVeganButton input[type='radio'] + label {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2bb470;
+    line-height: 15px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch) {
+    border-radius: 7px;
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    -webkit-transform: rotate(var(--r, 20deg));
+            transform: rotate(var(--r, 20deg));
+  }
+  .meatOrVeganButton input[type='checkbox']:not(.switch):checked {
+    --r: 43deg;
+  }
+  .meatOrVeganButton input[type='checkbox'].switch {
+    width: 14px;
+    border-radius: 11px;
+  }
+  .meatOrVeganButton input[type='checkbox'].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    -webkit-transform: translateY(var(--x, 0));
+            transform: translateY(var(--x, 0));
+  }
+  .meatOrVeganButton input[type='checkbox'].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+  .meatOrVeganButton input[type='checkbox'].switch:disabled:not(:checked):after {
+    opacity: .6;
+  }
+}
+
+.meatOrVeganButton ul {
+  margin: 12px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 320px;
+}
+
+.meatOrVeganButton ul li {
+  margin: 16px 0;
+  position: relative;
+}
+
+.meatOrVeganButton html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.meatOrVeganButton * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.meatOrVeganButton *:before, .meatOrVeganButton *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.meatOrVeganButton body {
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #8A91B4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F6F8FF;
+}
+
+@media (max-width: 800px) {
+  .meatOrVeganButton body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=topButtons.css.map */

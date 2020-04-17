@@ -1,0 +1,321 @@
+@import 'topButtons';
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #C2EEDD;
+}
+
+.masterClass{
+    background-color: #EEFAF6;
+    //background: linear-gradient(90deg, #ddebe6 27%, #EEFAF6 27%);
+    margin: 4% 2%;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-auto-rows: minmax(auto);
+    
+}
+
+.lineGray{
+    grid-row: 1;
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid lightgray;
+    grid-template-rows: 55px 1fr;
+    background: lightgreen;
+}
+
+/* .searchBar{
+    grid-column: 5 / 9;
+    grid-row: 1;
+    background: #EEFAF6;
+    align-self: center;
+    display: grid;
+    grid-template-columns:1.5rem 4fr 1fr;
+    width:300px;
+    overflow: hidden;
+    .searchType{
+        border: none;
+        background: none;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+} */
+
+
+.shopBagAndBell{
+    grid-column: 1 / 4;
+    gap: 0px;
+    padding: 1em;
+    background-color: #ddebe6;
+    border-radius: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: 1px solid lightgray;
+    color: #2bb470;
+    font-size: 18px;
+    
+    .aBell{
+        grid-column: 4 / 5;
+        justify-content: center;
+        justify-items: end;
+        color: #2bb470;
+        font-size: 20px;
+    }
+}
+.helloName{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: #ddebe6;
+    border-radius: 0px 0px 0px 20px;
+    .textAlign{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto;
+        .bebe{
+            grid-column: 2 / 3;
+            margin: 20px 0px 0px 0px;
+        }
+        h2{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        p{
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #828282;
+        }
+    }
+
+    i.pencil:after{
+        content: '\f040';
+        color: #00AF4D;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        margin-left:5px;
+    }
+
+    .eatMenu{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 3fr 1fr;
+        grid-template-rows: auto auto 50px 50px 50px 50px 50px auto 50px 50px 50px auto;
+        border-radius: 0px 0px 0px 20px;
+        .creatMenu{
+            grid-column: 2 / 4;
+            margin: 35px 0px;
+            border-radius: 10px;
+            background: #2bb470;
+            color: #ddebe6;
+            height: 50%;
+            align-self: center;
+            border: none;
+            box-shadow:
+                0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)
+                ;
+                font-size: 18px
+        }
+        h5{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px 0px;
+            align-self: center;
+            color: #828282;
+        }
+        i.fa.fa-plus{
+            font-size: 18px;
+
+        }
+        .btnOverView{
+            grid-column: 2 /4;
+            grid-row: 3 / 4;
+            border-radius: 30px;
+            border: none;
+            background: none;
+            color: #828282;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+            }
+            .btnOverView:hover{
+                background: #EEFAF6;
+                color: black;
+                i.fa.fa-eye{
+                    color: #2bb470;
+                }
+                }
+        .btnMeal{
+            grid-column: 2 /4;
+            grid-row: 4 / 5;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnMeal:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-cutlery{
+                    color: #2bb470;
+                }
+            }
+        .btnUserAcc{
+            grid-column: 2 /4;
+            grid-row: 5 / 6;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnUserAcc:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-user-circle{
+                    color: #2bb470;
+                }
+            }
+        .btnHistory{
+            grid-column: 2 /4;
+            grid-row: 6 / 7;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnHistory:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-history{
+                    color: #2bb470;
+                }
+            }
+        .btnCalendar{
+            grid-column: 2 /4;
+            grid-row: 7 / 8;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnCalendar:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-calendar-check-o{
+                    color: #2bb470;
+                }
+            }
+
+        .onlineComunity{
+            grid-row: 9 / 10;
+        }
+
+        .btnReviews{
+            grid-column: 2 /4;
+            grid-row: 10 / 11;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnReviews:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-commenting{
+                    color: #2bb470;
+                }
+            }
+
+        .btnUserRecipies{
+            grid-column: 2 /4;
+            grid-row: 11 / 12;
+            border-radius: 30px;
+            color: #828282;
+            border: none;
+            background: none;
+            margin: 10px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: start;
+        }
+        .btnUserRecipies:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-user-circle-o{
+                    color: #2bb470;
+                }
+            }
+
+        .btnLogOut{
+            grid-column: 3 /4;
+            grid-row: 12 / 13;
+            border-radius: 30px;
+            color: #828282;
+            height: 30px;
+            border: none;
+            margin: 40px 0px;
+            background: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .btnLogOut:hover{
+            background: #EEFAF6;
+            color: black;
+                i.fa.fa-power-off{
+                    color: #2bb470;
+                }
+            }
+    }
+}
+
+
+
+
+.littleMaster{
+    background-color: #EEFAF6;
+}
+
+.infoSection{
+    grid-row: 2/3;
+    grid-column: 5/9;
+    background: white;
+}
+
+
+
+
+
+
+
+  
