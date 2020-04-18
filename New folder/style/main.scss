@@ -60,9 +60,19 @@ body{
     grid-column: 4 / 10;
     grid-row: 1;
     align-self: center;
-    border: none;
+    margin: 0 0 0 50px;
     cursor: pointer;
-    
+    input{
+        border: none;
+        background: none;
+        padding: 10px 144px 10px 2px;
+        &::after{
+            color: #2bb470;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
 }
 /* .searchBar{
     grid-column: 5 / 9;
@@ -168,7 +178,13 @@ body{
                 0 100px 80px rgba(0, 0, 0, 0.12)
                 ;
                 font-size: 18px
+            
+            
         }
+            .creatMenu:focus{
+                outline: none;
+            }
+
         h5{
             grid-column: 3 / 4;
             grid-row: 2 / 3;
@@ -200,6 +216,9 @@ body{
                     color: #2bb470;
                 }
                 }
+                .btnOverView:focus{
+                    outline: none;
+                }
         .btnMeal{
             grid-column: 2 /4;
             grid-row: 4 / 5;
@@ -218,6 +237,9 @@ body{
                 i.fa.fa-cutlery{
                     color: #2bb470;
                 }
+            }
+            .btnMeal:focus{
+                outline: none;
             }
         .btnUserAcc{
             grid-column: 2 /4;
@@ -238,6 +260,9 @@ body{
                     color: #2bb470;
                 }
             }
+            .btnUserAcc:focus{
+                outline: none;
+            }
         .btnHistory{
             grid-column: 2 /4;
             grid-row: 6 / 7;
@@ -257,6 +282,9 @@ body{
                     color: #2bb470;
                 }
             }
+            .btnHistory:focus{
+                outline: none;
+            }
         .btnCalendar{
             grid-column: 2 /4;
             grid-row: 7 / 8;
@@ -275,6 +303,9 @@ body{
                 i.fa.fa-calendar-check-o{
                     color: #2bb470;
                 }
+            }
+            .btnCalendar{
+                outline: none;
             }
 
         .onlineComunity{
@@ -300,6 +331,9 @@ body{
                     color: #2bb470;
                 }
             }
+            .btnReviews:focus{
+                outline: none;
+            }
 
         .btnUserRecipies{
             grid-column: 2 /4;
@@ -319,6 +353,9 @@ body{
                 i.fa.fa-user-circle-o{
                     color: #2bb470;
                 }
+            }
+            .btnUserRecipies{
+                outline: none;
             }
 
         .btnLogOut{
@@ -341,11 +378,11 @@ body{
                     color: #2bb470;
                 }
             }
+            .btnLogOut:focus{
+                outline: none;
+            }
     }
 }
-
-
-
 
 .littleMaster{
     background-color: #EEFAF6;
@@ -405,6 +442,9 @@ body{
                 color: #2bb470;
                 background-color: #C2EEDD;
             }
+            .compareMeal:focus{
+                outline: none;
+            }
         .filter{
             align-self: flex-end;
             background-color: transparent;
@@ -425,6 +465,9 @@ body{
                 color: #2bb470;
                 background-color: #C2EEDD;
             }
+            .filter:focus{
+                outline: none;
+            }
     }
 
     .typesOfCusines{
@@ -442,6 +485,9 @@ body{
             .selectCusines:hover{
                 color: black;
             }
+            .selectCusines:focus{
+                outline: none;
+            }
         .mainSort{
             justify-self: end;
             color: $textColor;
@@ -450,6 +496,9 @@ body{
                 border: none;
                 background-color: transparent;
                 cursor: pointer;
+            }
+            .sortBy:focus{
+                outline: none;
             }
         }
     }
@@ -466,51 +515,152 @@ body{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+            
+            .dumpling{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food2{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .southIndianFood{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food3{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .greekSalad{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food4{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .thaiChicken{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food5{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .veganCarbonara{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food6{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .bisteccaFiorentina{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food7{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .burgerPork{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food8{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .pinsaRomana{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+                background: center;
+            }
         }
         .food9{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .cajuSalad{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
         .food10{
             border: 1px solid lightgray;
             border-radius: 5px;
             margin: 10px 45px 10px 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 5fr 2fr;
+
+            .moldavianSoup{
+                grid-column: 2 / 3;
+                height: 110px;
+                width: 110px;
+                border-radius: 5px;
+                align-self: center;
+            }
         }
     }
 }

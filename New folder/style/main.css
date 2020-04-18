@@ -400,8 +400,22 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: none;
+  margin: 0 0 0 50px;
   cursor: pointer;
+}
+
+.searchFood input {
+  border: none;
+  background: none;
+  padding: 10px 144px 10px 2px;
+}
+
+.searchFood input::after {
+  color: #2bb470;
+}
+
+.searchFood input:focus {
+  outline: none;
 }
 
 /* .searchBar{
@@ -542,6 +556,10 @@ body {
   font-size: 18px;
 }
 
+.helloName .eatMenu .creatMenu:focus {
+  outline: none;
+}
+
 .helloName .eatMenu h5 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -587,6 +605,10 @@ body {
   color: #2bb470;
 }
 
+.helloName .eatMenu .btnOverView:focus {
+  outline: none;
+}
+
 .helloName .eatMenu .btnMeal {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -611,6 +633,10 @@ body {
 
 .helloName .eatMenu .btnMeal:hover i.fa.fa-cutlery {
   color: #2bb470;
+}
+
+.helloName .eatMenu .btnMeal:focus {
+  outline: none;
 }
 
 .helloName .eatMenu .btnUserAcc {
@@ -639,6 +665,10 @@ body {
   color: #2bb470;
 }
 
+.helloName .eatMenu .btnUserAcc:focus {
+  outline: none;
+}
+
 .helloName .eatMenu .btnHistory {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -665,6 +695,10 @@ body {
   color: #2bb470;
 }
 
+.helloName .eatMenu .btnHistory:focus {
+  outline: none;
+}
+
 .helloName .eatMenu .btnCalendar {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -689,6 +723,10 @@ body {
 
 .helloName .eatMenu .btnCalendar:hover i.fa.fa-calendar-check-o {
   color: #2bb470;
+}
+
+.helloName .eatMenu .btnCalendar {
+  outline: none;
 }
 
 .helloName .eatMenu .onlineComunity {
@@ -723,6 +761,10 @@ body {
   color: #2bb470;
 }
 
+.helloName .eatMenu .btnReviews:focus {
+  outline: none;
+}
+
 .helloName .eatMenu .btnUserRecipies {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -749,6 +791,10 @@ body {
   color: #2bb470;
 }
 
+.helloName .eatMenu .btnUserRecipies {
+  outline: none;
+}
+
 .helloName .eatMenu .btnLogOut {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -773,6 +819,10 @@ body {
 
 .helloName .eatMenu .btnLogOut:hover i.fa.fa-power-off {
   color: #2bb470;
+}
+
+.helloName .eatMenu .btnLogOut:focus {
+  outline: none;
 }
 
 .littleMaster {
@@ -856,6 +906,10 @@ body {
   background-color: #C2EEDD;
 }
 
+.infoSection .myOption .compareMeal:focus {
+  outline: none;
+}
+
 .infoSection .myOption .filter {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -877,6 +931,10 @@ body {
 .infoSection .myOption .filter:hover {
   color: #2bb470;
   background-color: #C2EEDD;
+}
+
+.infoSection .myOption .filter:focus {
+  outline: none;
 }
 
 .infoSection .typesOfCusines {
@@ -902,6 +960,10 @@ body {
   color: black;
 }
 
+.infoSection .typesOfCusines .selectCusines:focus {
+  outline: none;
+}
+
 .infoSection .typesOfCusines .mainSort {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -912,6 +974,10 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.infoSection .typesOfCusines .mainSort .sortBy:focus {
+  outline: none;
 }
 
 .infoSection .sectionSelectionFood {
@@ -931,60 +997,221 @@ body {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food1 .dumpling {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food2 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food2 .southIndianFood {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food3 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food3 .greekSalad {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food4 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food4 .thaiChicken {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food5 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food5 .veganCarbonara {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food6 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food6 .bisteccaFiorentina {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food7 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food7 .burgerPork {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food8 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food8 .pinsaRomana {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: center;
 }
 
 .infoSection .sectionSelectionFood .food9 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food9 .cajuSalad {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .infoSection .sectionSelectionFood .food10 {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 10px 45px 10px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 5fr 2fr;
+      grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food10 .moldavianSoup {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: 110px;
+  width: 110px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .widgets {
