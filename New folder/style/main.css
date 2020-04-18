@@ -501,7 +501,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
 }
 
 .helloName .textAlign p {
@@ -512,7 +512,7 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   color: #828282;
 }
 
@@ -567,7 +567,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   margin: 10px 0px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -591,7 +591,7 @@ body {
   background: none;
   color: #828282;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -621,7 +621,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -651,7 +651,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -681,7 +681,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -711,7 +711,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -747,7 +747,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -777,7 +777,7 @@ body {
   border: none;
   background: none;
   margin: 10px 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   text-align: start;
   cursor: pointer;
 }
@@ -808,7 +808,7 @@ body {
   border: none;
   margin: 40px 0px;
   background: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
   cursor: pointer;
 }
 
@@ -851,7 +851,7 @@ body {
       grid-template-columns: 2fr auto auto;
   -ms-grid-rows: 100px 25px;
       grid-template-rows: 100px 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
 }
 
 .infoSection .myOption .myOptionMealTitle {
@@ -898,7 +898,7 @@ body {
   margin: 0 4px;
   cursor: pointer;
   font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
 }
 
 .infoSection .myOption .compareMeal:hover {
@@ -925,7 +925,7 @@ body {
   font-size: 14px;
   margin: 0 4px;
   cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans Regular";
 }
 
 .infoSection .myOption .filter:hover {
@@ -1015,6 +1015,22 @@ body {
       align-self: center;
 }
 
+.infoSection .sectionSelectionFood .food1 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food1 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food2 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1035,6 +1051,22 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food2 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food2 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
 }
 
 .infoSection .sectionSelectionFood .food3 {
@@ -1059,6 +1091,22 @@ body {
       align-self: center;
 }
 
+.infoSection .sectionSelectionFood .food3 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food3 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food4 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1079,6 +1127,22 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food4 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food4 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
 }
 
 .infoSection .sectionSelectionFood .food5 {
@@ -1103,6 +1167,22 @@ body {
       align-self: center;
 }
 
+.infoSection .sectionSelectionFood .food5 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food5 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food6 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1125,6 +1205,22 @@ body {
       align-self: center;
 }
 
+.infoSection .sectionSelectionFood .food6 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food6 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food7 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1145,6 +1241,22 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food7 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food7 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
 }
 
 .infoSection .sectionSelectionFood .food8 {
@@ -1170,6 +1282,22 @@ body {
   background: center;
 }
 
+.infoSection .sectionSelectionFood .food8 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food8 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food9 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1192,6 +1320,22 @@ body {
       align-self: center;
 }
 
+.infoSection .sectionSelectionFood .food9 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food9 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
+}
+
 .infoSection .sectionSelectionFood .food10 {
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -1212,6 +1356,22 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food10 .foodTitle {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  font-family: "Lucida Sans Regular";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.infoSection .sectionSelectionFood .food10 .foodTitle p {
+  font-size: 14px;
+  color: #828282;
 }
 
 .widgets {
