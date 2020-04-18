@@ -369,8 +369,8 @@ body {
   display: grid;
   -ms-grid-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 20px 2fr 20px;
       grid-template-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 20px 2fr 20px;
-  -ms-grid-rows: 50px 1fr;
-      grid-template-rows: 50px 1fr;
+  -ms-grid-rows: 70px 1fr;
+      grid-template-rows: 70px 1fr;
   grid-auto-rows: minmax(auto);
 }
 
@@ -385,8 +385,8 @@ body {
   -ms-grid-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 20px 2fr 20px;
       grid-template-columns: 20px 2fr 20px 1fr 1fr 1fr 1fr 1fr 1fr 20px 2fr 20px;
   border-bottom: 1px solid lightgray;
-  -ms-grid-rows: 50px 1fr;
-      grid-template-rows: 50px 1fr;
+  -ms-grid-rows: 70px 1fr;
+      grid-template-rows: 70px 1fr;
   background: #EEFAF6;
   border-radius: 20px 20px 0px 0px;
 }
@@ -443,7 +443,7 @@ body {
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
   gap: 0px;
-  padding: 1em;
+  padding: 1.3em;
   background-color: #ddebe6;
   border-radius: 20px 0px 0px 0px;
   display: -ms-grid;
@@ -456,6 +456,8 @@ body {
   color: #2bb470;
   font-size: 18px;
   cursor: pointer;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .shopBagAndBell .aBell {
