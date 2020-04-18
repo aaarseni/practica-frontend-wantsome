@@ -520,7 +520,14 @@ body{
             margin: 10px 45px 10px 0px;
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
-            
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .dumpling{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -568,6 +575,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .southIndianFood{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -615,6 +630,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .greekSalad{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -662,6 +685,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .thaiChicken{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -709,6 +740,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .veganCarbonara{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -756,6 +795,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .bisteccaFiorentina{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -803,6 +850,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .burgerPork{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -850,6 +905,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .pinsaRomana{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -898,6 +961,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .cajuSalad{
                 grid-column: 2 / 3;
                 height: 110px;
@@ -945,6 +1016,14 @@ body{
             display: grid;
             grid-template-columns: 1fr 2fr 5fr 2fr;
 
+            .somepoints{
+                font-size: 20px;
+                font-weight: 900;
+                justify-self: center;
+                align-self: center;
+                color: $textColor;
+                cursor: pointer;
+            }
             .moldavianSoup{
                 grid-column: 2 / 3;
                 height: 110px;

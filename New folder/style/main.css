@@ -1007,6 +1007,18 @@ body {
       grid-template-columns: 1fr 2fr 5fr 2fr;
 }
 
+.infoSection .sectionSelectionFood .food1 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
+}
+
 .infoSection .sectionSelectionFood .food1 .dumpling {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1073,6 +1085,18 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 5fr 2fr;
       grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food2 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food2 .southIndianFood {
@@ -1143,6 +1167,18 @@ body {
       grid-template-columns: 1fr 2fr 5fr 2fr;
 }
 
+.infoSection .sectionSelectionFood .food3 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
+}
+
 .infoSection .sectionSelectionFood .food3 .greekSalad {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1209,6 +1245,18 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 5fr 2fr;
       grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food4 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food4 .thaiChicken {
@@ -1279,6 +1327,18 @@ body {
       grid-template-columns: 1fr 2fr 5fr 2fr;
 }
 
+.infoSection .sectionSelectionFood .food5 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
+}
+
 .infoSection .sectionSelectionFood .food5 .veganCarbonara {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1345,6 +1405,18 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 5fr 2fr;
       grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food6 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food6 .bisteccaFiorentina {
@@ -1415,6 +1487,18 @@ body {
       grid-template-columns: 1fr 2fr 5fr 2fr;
 }
 
+.infoSection .sectionSelectionFood .food7 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
+}
+
 .infoSection .sectionSelectionFood .food7 .burgerPork {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1481,6 +1565,18 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 5fr 2fr;
       grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food8 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food8 .pinsaRomana {
@@ -1552,6 +1648,18 @@ body {
       grid-template-columns: 1fr 2fr 5fr 2fr;
 }
 
+.infoSection .sectionSelectionFood .food9 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
+}
+
 .infoSection .sectionSelectionFood .food9 .cajuSalad {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1618,6 +1726,18 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 2fr 5fr 2fr;
       grid-template-columns: 1fr 2fr 5fr 2fr;
+}
+
+.infoSection .sectionSelectionFood .food10 .somepoints {
+  font-size: 20px;
+  font-weight: 900;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #828282;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food10 .moldavianSoup {
