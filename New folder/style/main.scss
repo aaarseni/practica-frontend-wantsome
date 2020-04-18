@@ -2,6 +2,30 @@
 @import 'variables';
 
 
+        /* width */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #2bb470; 
+            border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #2bb470; 
+            border-radius: 10px;
+            
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2bb470; 
+        }
+        
+
 body{
     height: 100vh;
     margin: 0;
@@ -329,7 +353,6 @@ body{
 
 .infoSection{
     grid-column: 4/10;
-    border: 1px solid yellowgreen;
     display: grid;
     grid-template-columns: 50px auto 50px;
     grid-template-rows: 155px 40px auto;
@@ -432,61 +455,62 @@ body{
     }
 
     .sectionSelectionFood{
-        grid-column: 2 / 3;
+        grid-column: 2 / 4;
         display: grid;
         grid-template-rows: 170px 170px 170px 170px 170px 170px 170px 170px 170px 170px;
         scroll-behavior: smooth;
         overflow: scroll;
         height: 80vh;
+
         .food1{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food2{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food3{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food4{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food5{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food6{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food7{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food8{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food9{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
         .food10{
             border: 1px solid lightgray;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 10px 45px 10px 0px;
         }
     }
 }
