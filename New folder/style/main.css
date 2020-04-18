@@ -418,6 +418,10 @@ body {
   outline: none;
 }
 
+.fa.fa-search {
+  color: #828282;
+}
+
 /* .searchBar{
     grid-column: 5 / 9;
     grid-row: 1;
@@ -1013,6 +1017,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food1 .foodTitle {
@@ -1029,6 +1034,35 @@ body {
 .infoSection .sectionSelectionFood .food1 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food1 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food1 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food1 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food1 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food2 {
@@ -1051,6 +1085,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food2 .foodTitle {
@@ -1067,6 +1102,35 @@ body {
 .infoSection .sectionSelectionFood .food2 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food2 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food2 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food2 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food2 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food3 {
@@ -1089,6 +1153,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food3 .foodTitle {
@@ -1105,6 +1170,35 @@ body {
 .infoSection .sectionSelectionFood .food3 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food3 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food3 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food3 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food3 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food4 {
@@ -1127,6 +1221,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food4 .foodTitle {
@@ -1143,6 +1238,35 @@ body {
 .infoSection .sectionSelectionFood .food4 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food4 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food4 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food4 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food4 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food5 {
@@ -1165,6 +1289,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food5 .foodTitle {
@@ -1181,6 +1306,35 @@ body {
 .infoSection .sectionSelectionFood .food5 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food5 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food5 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food5 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food5 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food6 {
@@ -1203,6 +1357,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food6 .foodTitle {
@@ -1219,6 +1374,35 @@ body {
 .infoSection .sectionSelectionFood .food6 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food6 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food6 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food6 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food6 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food7 {
@@ -1241,6 +1425,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food7 .foodTitle {
@@ -1257,6 +1442,35 @@ body {
 .infoSection .sectionSelectionFood .food7 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food7 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food7 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food7 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food7 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food8 {
@@ -1280,6 +1494,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   background: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food8 .foodTitle {
@@ -1296,6 +1511,35 @@ body {
 .infoSection .sectionSelectionFood .food8 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food8 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food8 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food8 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food8 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food9 {
@@ -1318,6 +1562,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food9 .foodTitle {
@@ -1334,6 +1579,35 @@ body {
 .infoSection .sectionSelectionFood .food9 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food9 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food9 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food9 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food9 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food10 {
@@ -1356,6 +1630,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .infoSection .sectionSelectionFood .food10 .foodTitle {
@@ -1372,6 +1647,35 @@ body {
 .infoSection .sectionSelectionFood .food10 .foodTitle p {
   font-size: 14px;
   color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food10 .pricePlusAdd {
+  display: -ms-grid;
+  display: grid;
+  font-size: 25px;
+  font-family: "Lucida Sans Regular";
+  font-weight: 900;
+}
+
+.infoSection .sectionSelectionFood .food10 .pricePlusAdd .fa.fa-usd {
+  color: #828282;
+}
+
+.infoSection .sectionSelectionFood .food10 .pricePlusAdd .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 0 0;
+}
+
+.infoSection .sectionSelectionFood .food10 .pricePlusAdd .fa.fa-plus-square-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 30px;
+  color: #2bb470;
+  margin: 15px;
+  cursor: pointer;
 }
 
 .widgets {

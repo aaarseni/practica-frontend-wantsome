@@ -74,6 +74,9 @@ body{
         }
     }
 }
+.fa.fa-search{
+    color:$textColor;
+}
 /* .searchBar{
     grid-column: 5 / 9;
     grid-row: 1;
@@ -524,17 +527,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                    .pricePlusAdd{
+                        display: grid;
+                        font-size: 25px;
+                        font-family: $fontVerdana;
+                        font-weight: 900;
+                        .fa.fa-usd{
+                            color: $textColor;
+                        }
+                        .price{
+                            align-self: center;
+                            margin: 20px 0 0 0;
+                        }
+                        .fa.fa-plus-square-o{
+                            align-self: flex-end;
+                            justify-self: flex-end;
+                            font-size: 30px;
+                            color: #2bb470;
+                            margin: 15px;
+                            cursor: pointer;
+                        }
+                    }
         }
         .food2{
             border: 1px solid lightgray;
@@ -549,17 +574,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food3{
             border: 1px solid lightgray;
@@ -574,17 +621,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food4{
             border: 1px solid lightgray;
@@ -599,17 +668,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food5{
             border: 1px solid lightgray;
@@ -624,17 +715,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food6{
             border: 1px solid lightgray;
@@ -649,17 +762,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food7{
             border: 1px solid lightgray;
@@ -674,17 +809,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food8{
             border: 1px solid lightgray;
@@ -700,17 +857,39 @@ body{
                 border-radius: 5px;
                 align-self: center;
                 background: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food9{
             border: 1px solid lightgray;
@@ -725,17 +904,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
         .food10{
             border: 1px solid lightgray;
@@ -750,17 +951,39 @@ body{
                 width: 110px;
                 border-radius: 5px;
                 align-self: center;
+                cursor: pointer;
             }
-            .foodTitle{
-                grid-column: 3 / 4;
-                font-family: $fontVerdana;
-                display: grid;
-                align-self: center;
-                p{
-                    font-size: 14px;
-                    color: $textColor;
+                .foodTitle{
+                    grid-column: 3 / 4;
+                    font-family: $fontVerdana;
+                    display: grid;
+                    align-self: center;
+                    p{
+                        font-size: 14px;
+                        color: $textColor;
+                    }
                 }
-            }
+                .pricePlusAdd{
+                    display: grid;
+                    font-size: 25px;
+                    font-family: $fontVerdana;
+                    font-weight: 900;
+                    .fa.fa-usd{
+                        color: $textColor;
+                    }
+                    .price{
+                        align-self: center;
+                        margin: 20px 0 0 0;
+                    }
+                    .fa.fa-plus-square-o{
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                        font-size: 30px;
+                        color: #2bb470;
+                        margin: 15px;
+                        cursor: pointer;
+                    }
+                }
         }
     }
 }
