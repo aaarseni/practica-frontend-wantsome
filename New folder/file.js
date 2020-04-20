@@ -1,4 +1,4 @@
-// updated 2019
+/* // updated 2019
 const input = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 
@@ -8,7 +8,7 @@ const expand = () => {
 };
 
 searchBtn.addEventListener("click", expand);
-
+ */
 
 
 
@@ -25,3 +25,11 @@ searchBtn.addEventListener("click", expand);
 // }
 // $('button').on('click', expand);
 //
+
+/* $(document).ready(function(){
+  $("sectionSelectionFood").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+}); */
