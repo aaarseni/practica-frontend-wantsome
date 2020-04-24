@@ -4,332 +4,448 @@
   grid-column: 10 /13;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 110px 110px 110px;
+      grid-template-columns: 110px 110px 110px;
   -ms-grid-row-align: center;
       align-self: center;
 }
 
-@supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  .meatOrVeganButton input[type='checkbox'],
-  .meatOrVeganButton input[type='radio'] {
-    --active: #2bb470;
-    --active-inner: #fff;
-    --focus: 2px rgba(39, 94, 254, .3);
-    --border: #BBC1E1;
-    --border-hover: #2bb470;
-    --background: #fff;
-    --disabled: #F6F8FF;
-    --disabled-inner: #E1E6F9;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 15px;
-    outline: none;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin: 0;
-    cursor: pointer;
-    border: 1px solid var(--bc, var(--border));
-    background: var(--b, var(--background));
-    -webkit-transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
-    transition: background .3s, border-color .3s, -webkit-box-shadow .2s;
-    transition: background .3s, border-color .3s, box-shadow .2s;
-    transition: background .3s, border-color .3s, box-shadow .2s, -webkit-box-shadow .2s;
-  }
-  .meatOrVeganButton input[type='checkbox']:after,
-  .meatOrVeganButton input[type='radio']:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    position: absolute;
-    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-  }
-  .meatOrVeganButton input[type='checkbox']:checked,
-  .meatOrVeganButton input[type='radio']:checked {
-    --b: var(--active);
-    --bc: var(--active);
-    --d-o: .3s;
-    --d-t: .6s;
-    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
-  }
-  .meatOrVeganButton input[type='checkbox']:disabled,
-  .meatOrVeganButton input[type='radio']:disabled {
-    --b: var(--disabled);
-    cursor: not-allowed;
-    opacity: .9;
-  }
-  .meatOrVeganButton input[type='checkbox']:disabled:checked,
-  .meatOrVeganButton input[type='radio']:disabled:checked {
-    --b: var(--disabled-inner);
-    --bc: var(--border);
-  }
-  .meatOrVeganButton input[type='checkbox']:disabled + label,
-  .meatOrVeganButton input[type='radio']:disabled + label {
-    cursor: not-allowed;
-  }
-  .meatOrVeganButton input[type='checkbox']:hover:not(:checked):not(:disabled),
-  .meatOrVeganButton input[type='radio']:hover:not(:checked):not(:disabled) {
-    --bc: var(--border-hover);
-  }
-  .meatOrVeganButton input[type='checkbox']:focus,
-  .meatOrVeganButton input[type='radio']:focus {
-    -webkit-box-shadow: 0 0 0 var(--focus);
-            box-shadow: 0 0 0 var(--focus);
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch),
-  .meatOrVeganButton input[type='radio']:not(.switch) {
-    width: 15px;
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch):after,
-  .meatOrVeganButton input[type='radio']:not(.switch):after {
-    opacity: var(--o, 0);
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch):checked,
-  .meatOrVeganButton input[type='radio']:not(.switch):checked {
-    --o: 1;
-  }
-  .meatOrVeganButton input[type='checkbox'] + label,
-  .meatOrVeganButton input[type='radio'] + label {
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #2bb470;
-    line-height: 15px;
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-    margin-left: 4px;
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch) {
-    border-radius: 7px;
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch):after {
-    width: 5px;
-    height: 9px;
-    border: 2px solid var(--active-inner);
-    border-top: 0;
-    border-left: 0;
-    left: 7px;
-    top: 4px;
-    -webkit-transform: rotate(var(--r, 20deg));
-            transform: rotate(var(--r, 20deg));
-  }
-  .meatOrVeganButton input[type='checkbox']:not(.switch):checked {
-    --r: 43deg;
-  }
-  .meatOrVeganButton input[type='checkbox'].switch {
-    width: 14px;
-    border-radius: 11px;
-  }
-  .meatOrVeganButton input[type='checkbox'].switch:after {
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: var(--ab, var(--border));
-    -webkit-transform: translateY(var(--x, 0));
-            transform: translateY(var(--x, 0));
-  }
-  .meatOrVeganButton input[type='checkbox'].switch:checked {
-    --ab: var(--active-inner);
-    --x: 17px;
-  }
-  .meatOrVeganButton input[type='checkbox'].switch:disabled:not(:checked):after {
-    opacity: .6;
-  }
-}
-
-.meatOrVeganButton ul {
-  margin: 12px;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  max-width: 320px;
-}
-
-.meatOrVeganButton ul li {
-  margin: 16px 0;
-  position: relative;
-}
-
-.meatOrVeganButton html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.meatOrVeganButton * {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-.meatOrVeganButton *:before, .meatOrVeganButton *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-.meatOrVeganButton body {
-  min-height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #8A91B4;
+.meatOrVeganButton .checker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 40px;
+  height: 9px;
+  width: 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0.15em;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform var(--duration) ease;
+  transition: -webkit-transform var(--duration) ease;
+  transition: transform var(--duration) ease;
+  transition: transform var(--duration) ease, -webkit-transform var(--duration) ease;
+  cursor: pointer;
+}
+
+.meatOrVeganButton .checkmark {
+  width: 15px;
+  height: 15px;
+  -webkit-transition: -webkit-transform var(--duration) ease;
+  transition: -webkit-transform var(--duration) ease;
+  transition: transform var(--duration) ease;
+  transition: transform var(--duration) ease, -webkit-transform var(--duration) ease;
+  -webkit-transform: translateX(-0.4em);
+          transform: translateX(-0.4em);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 5;
+}
+
+.meatOrVeganButton .checkmark svg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  background: #e5e5e5;
+  -webkit-transform: translateX(0.4em);
+          transform: translateX(0.4em);
+  border-radius: 0.15em;
+  -webkit-transition: background-color var(--duration) ease, -webkit-transform calc(var(--duration) * 1.5) ease;
+  transition: background-color var(--duration) ease, -webkit-transform calc(var(--duration) * 1.5) ease;
+  transition: background-color var(--duration) ease, transform calc(var(--duration) * 1.5) ease;
+  transition: background-color var(--duration) ease, transform calc(var(--duration) * 1.5) ease, -webkit-transform calc(var(--duration) * 1.5) ease;
+}
+
+.meatOrVeganButton .checkmark svg path {
+  stroke-dasharray: 90 90;
+  stroke-dashoffset: 90;
+  -webkit-transition: stroke-dashoffset calc(var(--duration) / 3) linear calc(var(--duration) / 3);
+  transition: stroke-dashoffset calc(var(--duration) / 3) linear calc(var(--duration) / 3);
+}
+
+.meatOrVeganButton .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  visibility: hidden;
+}
+
+.meatOrVeganButton .checkbox:checked ~ .checkmark {
+  -webkit-transform: translate(0.8em);
+          transform: translate(0.8em);
+}
+
+.meatOrVeganButton .checkbox:checked ~ .checkmark svg {
+  background: #2bb470;
+  -webkit-transform: translate(-0.4em);
+          transform: translate(-0.4em);
+}
+
+.meatOrVeganButton .checkbox:checked ~ .checkmark svg path {
+  stroke-dashoffset: 0;
+}
+
+.meatOrVeganButton .check-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: white;
+  z-index: 2;
+}
+
+.meatOrVeganButton .check-bg:before, .meatOrVeganButton .check-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.meatOrVeganButton .check-bg:after {
+  background: white;
+}
+
+.meatOrVeganButton .check-bg:before {
+  -webkit-transition: -webkit-transform var(--duration) ease;
+  transition: -webkit-transform var(--duration) ease;
+  transition: transform var(--duration) ease;
+  transition: transform var(--duration) ease, -webkit-transform var(--duration) ease;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  background: black;
+  -webkit-filter: blur(0.25em);
+          filter: blur(0.25em);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.meatOrVeganButton .checker.checker:active {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition-duration: calc(var(--duration) / 2);
+          transition-duration: calc(var(--duration) / 2);
+}
+
+.meatOrVeganButton .checker.checker:active .check-bg::before {
+  -webkit-transform: translateY(0) scale(0.8);
+          transform: translateY(0) scale(0.8);
+  opacity: 0.2;
+}
+
+.meatOrVeganButton *,
+.meatOrVeganButton *::before,
+.meatOrVeganButton *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.meatOrVeganButton #app {
+  height: 20px;
+  width: 40px;
+}
+
+.meatOrVeganButton .gluten {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  padding: 0;
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F6F8FF;
+  font-family: 'Lucida Sans Regular';
+  font-size: 14px;
 }
 
-@media (max-width: 800px) {
-  .meatOrVeganButton body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+.meatOrVeganButton .vegan {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  padding: 0;
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-family: "Lucida Sans Regular";
+  font-size: 14px;
+}
+
+.meatOrVeganButton .meat {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  padding: 0;
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-family: "Lucida Sans Regular";
+  font-size: 14px;
+}
+
+.meatOrVeganButton #gluten {
+  margin: 1px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+}
+
+.meatOrVeganButton #vegan {
+  margin: 1px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.meatOrVeganButton #meat {
+  margin: 1px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .meatOrVeganButton {
+    -ms-grid-columns: 30px 1fr;
+        grid-template-columns: 30px 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .meatOrVeganButton .check-bg {
+    display: none;
+  }
+  .meatOrVeganButton .gluten {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton .vegan {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton .meat {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton #gluten {
+    margin: 1px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #vegan {
+    margin: 1px;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #meat {
+    margin: 1px;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
   }
 }
 
-#content {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 4;
-  grid-column: 6 / 10;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 /3;
-  height: 50px;
-  width: 400px;
-  margin-left: 70%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .meatOrVeganButton {
+    -ms-grid-columns: 40px 1fr;
+        grid-template-columns: 40px 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .meatOrVeganButton .check-bg {
+    display: none;
+  }
+  .meatOrVeganButton .gluten {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton .vegan {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton .meat {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 10px;
+  }
+  .meatOrVeganButton #gluten {
+    margin: 1px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #vegan {
+    margin: 1px;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #meat {
+    margin: 1px;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
 }
 
-#content.on {
-  -webkit-animation-name: in-out;
-  animation-name: in-out;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-.insert {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 50px;
-  height: 50px;
-  border: 4px solid #2bb470;
-  border-radius: 50%;
-  background: none;
-  color: #2bb470;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Roboto;
-  outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-}
-
-.search {
-  background: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  border-radius: 100%;
-  outline: 0;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-}
-
-.search:before {
-  content: "";
-  position: fixed;
-  width: 20px;
-  height: 4px;
-  background-color: #2bb470;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-top: 26px;
-  margin-left: 17px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.close {
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-}
-
-.close:before {
-  content: "";
-  position: fixed;
-  width: 27px;
-  height: 4px;
-  margin-top: -1px;
-  margin-left: -13px;
-  background-color: #2bb470;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.close:after {
-  content: "";
-  position: fixed;
-  width: 27px;
-  height: 4px;
-  background-color: #2bb470;
-  margin-top: -1px;
-  margin-left: -13px;
-  cursor: pointer;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.square {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 40px 0 10px;
-  width: 300px;
-  height: 50px;
-  border: 4px solid #ffffff;
-  border-radius: 0;
-  background: none;
-  color: #2bb470;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 400;
-  outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
-  -webkit-transition-delay: 0.4s, 0s, 0.4s;
-  transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+@media only screen and (min-device-width: 768px) and (max-device-width: 1283px) and (-webkit-min-device-pixel-ratio: 1) {
+  .meatOrVeganButton {
+    -ms-grid-columns: 60px 1fr;
+        grid-template-columns: 60px 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  .meatOrVeganButton .gluten {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 14px;
+  }
+  .meatOrVeganButton .vegan {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 14px;
+  }
+  .meatOrVeganButton .meat {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    padding: 0;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 14px;
+  }
+  .meatOrVeganButton #gluten {
+    margin: 1px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #vegan {
+    margin: 1px;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
+  .meatOrVeganButton #meat {
+    margin: 1px;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+  }
 }
 
 /* width */
@@ -353,6 +469,10 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2bb470;
+}
+
+:root {
+  --duration: .4s;
 }
 
 body {
@@ -393,8 +513,8 @@ body {
 
 .searchFood {
   -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4 / 10;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / 8;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-flex-item-align: center;
@@ -422,22 +542,6 @@ body {
   color: #828282;
 }
 
-/* .searchBar{
-    grid-column: 5 / 9;
-    grid-row: 1;
-    background: #EEFAF6;
-    align-self: center;
-    display: grid;
-    grid-template-columns:1.5rem 4fr 1fr;
-    width:300px;
-    overflow: hidden;
-    .searchType{
-        border: none;
-        background: none;
-        font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-} */
 .shopBagAndBell {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;

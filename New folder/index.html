@@ -30,18 +30,51 @@
                 <input type='text' placeholder="Search...">
             </div>
             <div class="meatOrVeganButton">
-                <div class='meat'>
-                    <input id="s1" type="checkbox" class="switch">
-                    <label for="s1">&nbsp Gluten Free</label>
+                <p class='gluten'>Gluten free</p>
+                <div id="gluten"> 
+                    <label class="checker">
+                      <input class="checkbox" type="checkbox" />
+                      <div class="check-bg"></div>
+                      <div class="checkmark">
+                        <svg viewBox="0 0 100 100">
+                          <path d="M20,55 L40,75 L77,27" fill="none" stroke="#FFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <p class='vegan'> Vegan</p>
+                  <div id="vegan"> 
+                    <label class="checker">
+                      <input class="checkbox" type="checkbox" />
+                      <div class="check-bg"></div>
+                      <div class="checkmark">
+                        <svg viewBox="0 0 100 100">
+                          <path d="M20,55 L40,75 L77,27" fill="none" stroke="#FFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <p class='meat'> Meat</p>
+                  <div id="meat"> 
+                    <label class="checker">
+                      <input class="checkbox" type="checkbox" />
+                      <div class="check-bg"></div>
+                      <div class="checkmark">
+                        <svg viewBox="0 0 100 100">
+                          <path d="M20,55 L40,75 L77,27" fill="none" stroke="#FFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                 
+<!--                 <div class="switch">
+                    <input id="switch-1" type="checkbox" class="switch-input" />
+                    <label for="switch-1" class="switch-label">&nbsp Vegan</label>
                 </div>
-                <div class='vegan'>
-                    <input id="s2" type="checkbox" class="switch" checked>
-                    <label for="s2">&nbsp Vegan</label>
-                </div>
-                <div class="gluten">
-                    <input id="s3" type="checkbox" class="switch" checked>
-                    <label for="s3">&nbsp Meat</label>
-                </div>
+                <div class="switch">
+                    <input id="switch-1" type="checkbox" class="switch-input" />
+                    <label for="switch-1" class="switch-label">&nbsp Meat</label>
+                </div> -->
             </div>
         </div>
         <div class="helloName">
@@ -227,5 +260,6 @@
     </section>
 </body>
 <script type="text/javascript" src="file.js"></script>
+
 
 </html>
