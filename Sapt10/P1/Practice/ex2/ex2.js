@@ -18,7 +18,7 @@ const postTheGossip =() =>{
     const secondValue = document.getElementById('adjective').value;
     const thirdValue = document.getElementById('random-word').value;
     // Displaying the value
-    alert(`${firstValue} + ${secondValue} + ${thirdValue}`);
+    alert(`${firstValue}  este  ${secondValue}  dupa  ${thirdValue}`);
 }
 
 

@@ -6,6 +6,8 @@ intermediul onclick atasat elementului buton un event listener care sa declansez
 functia buttonEventHandler atunci cand se apasa pe buton.
 */
 
+
+
 /*
 2. Adaugati un nou element de tip text input. Specificati o noua functie textInputEventHandler.
 care afiseaza o alta alerta cu textul ("Textul din input a fost schimbat"). Specificati
@@ -29,9 +31,12 @@ manageText.onclick = () => {
 }
 
 
+const paragraph = document.querySelector('p');
 
-
-/* displayAlert.addEventListener('click', (event) => {
-    const ifYuClick = event.target;
-    
-}); */
+const cameleonEventHandler = () => {
+    let colors = ['blue', 'red' , 'yellow' , 'green' , 'gray'];
+    let chooseColor = Math.floor(Math.random() * 5);
+    paragraph.style.color = colors[chooseColor];
+    console.log(chooseColor);
+}
+document.querySelector('input').addEventListener('keydown', cameleonEventHandler);
