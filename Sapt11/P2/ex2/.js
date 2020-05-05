@@ -4,33 +4,30 @@
 // moveLetters('abcxy') // => "bcdyz"
 //hint : String.fromCharCode() String.charCodeAt()
 
-/* const moveLetters = function(string){
-    return string.toLowerCase().split('')
-      .map(letter => letter.replace((/[a-zA-Z]/g), String.fromCharCode(letter.charCodeAt(0) + 1)))
-        .join('')
-  }
-  console.log(moveLetters('hEllo')) */
-  
-  
-  // ex2
-  // Vreau sa am o functie care sa faca uppercase la cuvinte in functie ca in exemplu de mai jos
-  // changeWordCase('hey ppl, lets learn javascript together') // => "HEY ppl, LETS learn JAVASCRIPT together SOMETIME"
-  let changeWordCase = function(string){
-    return string.split('')
-    .map(function (firstWord) {
-      return firstWord[0].toUpperCase() + firstWord.slice(1);
-    })
+const moveLetters = function (string) {
+  return string
+    .toLowerCase()
+    .split('')
+    .map(letter =>
+      letter.replace(/[a-zA-Z]/g, String.fromCharCode(letter.charCodeAt(0) + 1))
+    )
     .join('')
-  }
-  console.log(changeWordCase('hey ppl, lets learn javascript together'))
-  
-  /* const words = str.split(' ');
-  console.log(words[3]); */
-  
-  
-  /* function titleCase(str) {
-    return str.split(' ').map(function(word) {
-      return (word.toUpperCase() + word.slice(5) + word.toLowerCase());
-    }).join(' ');
-  }
-  console.log(titleCase('hey ppl, lets learn javascript together')); */
+}
+console.log(moveLetters('hEllo'))
+
+// ex2
+// Vreau sa am o functie care sa faca uppercase la cuvinte in functie ca in exemplu de mai jos
+// changeWordCase('hey ppl, lets learn javascript together') // => "HEY ppl, LETS learn JAVASCRIPT together SOMETIME"
+
+let changeWordCase = function (string) {
+  return string
+    .split(' ')
+    .map((firstWord, index) => {
+      if (index % 2 == 0) {
+        return firstWord.toUpperCase()
+      }
+      return firstWord.toLowerCase()
+    })
+    .join(' ')
+}
+console.log(changeWordCase('hey ppl, lets learn javascript together sometime'))

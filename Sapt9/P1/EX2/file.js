@@ -54,4 +54,7 @@ Write a function named multipleCallbacks that accepts 3 arguments:
   - a function that should be called if the value of the status key is error
 */
 
-()
+
+const multipleCallbacks = (email, user, password) => {
+
+}

@@ -26,9 +26,14 @@ for (let i = 0; i < books.length; i++) {
     node.appendChild(creatLi)
   }
   document.querySelector('ul').appendChild(node);
-}
 
-const image = document.createElement('img');
-image.setAttribute('src','https://images-na.ssl-images-amazon.com/images/I/819ZixpQzUL.jpg');
-const appendImage = document.querySelector('li');
-li.appendChild(image);
+  const image = document.createElement('img');
+  image.setAttribute('src','https://images-na.ssl-images-amazon.com/images/I/819ZixpQzUL.jpg');
+  const appendImage = document.querySelector('li');
+  document.querySelector('ul').appendChild(image);
+
+  const secondImage = document.createElement('img');
+  secondImage.setAttribute('src','https://cdn7.avanticart.ro/librex.ro/pictures/mindset-8959-2.jpeg');
+  const appendSecondImage = document.querySelector('li');
+  document.querySelector('ul').appendChild(secondImage);
+}
