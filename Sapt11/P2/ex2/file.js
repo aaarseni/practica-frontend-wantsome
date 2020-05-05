@@ -8,12 +8,18 @@ const moveLetters = function (string) {
   return string
     .toLowerCase()
     .split('')
-    .map(letter =>
-      letter.replace(/[a-zA-Z]/g, String.fromCharCode(letter.charCodeAt(0) + 1))
-    )
+    .map(letter => {
+      if (String.fromCharCode(letter.charCodeAt()) === 'Z') {
+        return String.fromCharCode(65)
+      } else if (String.fromCharCode(letter.charCodeAt()) === 'z') {
+        return String.fromCharCode(97)
+      }
+      return letter.replace(/[a-zA-Z]/g, String.fromCharCode(letter.charCodeAt(0) + 1))
+    })
     .join('')
 }
-console.log(moveLetters('hEllo'))
+console.log(moveLetters('hElloz'))
+
 
 // ex2
 // Vreau sa am o functie care sa faca uppercase la cuvinte in functie ca in exemplu de mai jos
