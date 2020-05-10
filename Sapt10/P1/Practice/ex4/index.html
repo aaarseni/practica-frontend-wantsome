@@ -10,25 +10,25 @@
 
 <body>
     <section>
-        <form>
+        <form action="" method="POST">
             <h2>Get your own site</h2><br>
             <label class='textInput'>USERNAME:</label><br>
-            <input type="text"><br>
+            <input type="text" minLength="4" id="userName" class="required"><br>
             <span>(Must be at least 4 characters, letters and numbers only.)</span>
             <br><br>
             <label class='textInput'>EMAIL ADDRESS:</label><br>
-            <input type="email"><br>
+            <input type="email" id="email" class="required"><br>
             <span>We send your registration email to this address. (Double check your address before continuing.)</span>
             <br><br>
-            <label class='textInput'>FIRST NAME:</label><br>
-            <input type="text"><br>
+            <label class='textInput'>FULL NAME:</label><br>
+            <input type="text" id="fullName" class="required"><br>
             <span>(Must be input.)</span>
             <br><br>
             <label class='textInput'>NICKNAME:</label><br>
-            <input type='text'>
+            <input type='text' id="nickName" class="required">
             <br><br>
             <label class='textInput'>PHONE:</label><br>
-            <input type='number'><br>
+            <input type='number' minLength="10" id="phoneNumber" class="required"><br>
             <span>(Must be at least 10 characters, number only.)</span>
             <br><br>
             <input type='checkbox' class="checkBox">
@@ -36,7 +36,7 @@
             <input type="checkbox" class="checkBox">
             <label class='textInput'>JUST A USERNAME, PLEASE.</label>
             <br><br>
-            <button type="submit">NEXT</button>
+            <button type="submit"  id="submit">NEXT</button>
         </form>
     </section>
 </body>

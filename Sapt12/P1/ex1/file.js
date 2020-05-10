@@ -2,42 +2,29 @@
   // The Car and the Truck class have similar behavior and properties.
   // Rewrite them in a way such that they share those properties.
 
-  var Vehicle = function(driver) {
+  var Vehicle = function (driver) {
     this.driver = driver;
     this.speed = 0;
-    this.drive = function(mph) {
+    this.drive = function (mph) {
       this.speed = mph;
       return this.driver + ' driving at ' + mph + ' miles per hour';
-    };
-  };
-
-  var Car = function(driver) {
-    this.driver = driver;
-    this.speed = 0;
-    this.drive = function(mph) {
-      this.speed = mph;
-      return this.driver + ' driving at ' + mph + ' miles per hour';
-    };
-  };
-
-  var Truck = function(driver) {
-    this.driver = driver;
-    this.speed = 0;
-    this.cargo = [];
-    this.drive = function(mph) {
-      this.speed = mph;
-      return this.driver + ' driving at ' + mph + ' miles per hour';
-    };
-
-    this.loadCargo = function(cargo) {
-      this.cargo.push(cargo);
-      return this;
-    };
-
-    this.unloadCargo = function() {
-      return this.cargo.pop();
-    };
-  };
+    }
+  }
+  
+  var Truck = new Vehicle('Alex');
+  var Car = new Vehicle('Ana');
+  Car.cargo = [];
+  Car.loadCargo = function (cargo) {
+    this.cargo.push(cargo);
+    return this;
+  }
+  
+  Car.unloadCargo = function () {
+    return this.cargo.pop();
+  }
+  
+  console.log(Car);
+  console.log(Truck);
 
 
   /* ex2 */
@@ -72,3 +59,26 @@ aName.tech();
 // forma.isPrototypeOf(triunghi);        // true
 // triunghi.getPerimeter();              // 48
 // triunghi.getType();                   // "triunghi"
+
+function Triangle(a, b, c, type) {
+  this.a = a;
+  this.b = b;
+  this.c = c;
+  this.type = 'triangle'
+}
+
+const shape = {
+  getShape: function(){
+    return this.type
+  }
+}
+
+Triangle.prototype = shape;
+Triangle.prototype.constructor = Triangle;
+let newTriangle = new Triangle (16, 16, 16);
+newTriangle.getPerimeter = function(){
+  return this.a + this.b + this.c;
+}
+
+console.log(newTriangle.getShape());
+console.log(newTriangle.getPerimeter());

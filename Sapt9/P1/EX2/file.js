@@ -45,6 +45,50 @@ var filter = function(____, ____) {
 Call the filter function in 5 different cases ( 5 different filtering functions - example: filters the odd items, filter the items which are divisible by 3, etc... )
 */
 
+var randomArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var filter = function (array, callback) {
+  var filteredArray = [];
+  for (var i = 0; i < array.length; i++) {
+    var arrIndex = array[i];
+    if (callback(arrIndex)) {
+      filteredArray.push(arrIndex);
+    }
+  }
+  return filteredArray;
+};
+
+const byOdd = (value) => {
+  return value % 2 === 1;
+}
+console.log(filter(randomArray, byOdd))
+
+
+const filterDivideBy3 = (value) => {
+  return value % 3 === 0;
+}
+console.log(filter(randomArray, filterDivideBy3))
+
+
+const filterBy4 = (value) => {
+  result = Math.sqrt(value);
+  return result % 4 === 2;
+}
+console.log(filter(randomArray, filterBy4))
+
+
+const filterBy3 = (value) => {
+  return value % 3 === 2;
+}
+console.log(filter(randomArray, filterBy3))
+
+
+const filterByNumber = (value) => {
+  return value < 8;
+}
+console.log(filter(randomArray, filterByNumber))
+
+
 // 3 
 
 /*
@@ -54,7 +98,26 @@ Write a function named multipleCallbacks that accepts 3 arguments:
   - a function that should be called if the value of the status key is error
 */
 
-
-const multipleCallbacks = (email, user, password) => {
-
+let anObj = {
+  statusA: 'succes',
+  statusB: 'error'
 }
+
+const getSucces = () => {
+  return "This function is a succes!";
+}
+
+const getError = () => {
+  return "This is only a error!";
+}
+
+const multipleCallbacks = (obj, point1, point2) => {
+  if (Object.values(obj)[0] === 'succes') {
+    return point1();
+  }
+  if (Object.values(obj)[1] === 'error') {
+    return point2();
+  }
+}
+console.log(multipleCallbacks(anObj, getSucces))
+console.log(multipleCallbacks(anObj, getError))

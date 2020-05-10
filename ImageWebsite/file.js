@@ -1,4 +1,6 @@
-const url = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
+
+
+const url = 'https://picsum.photos/200/300'
 
 function getQuote() {
   fetch(url)
