@@ -3,7 +3,7 @@ mai mica sau mai mare decat 10 - se va face reject / resolve in functie de valoa
 comparatie.
 Apelati functia si folositi consumatorii then si catch pentru a trata ambele cazuri. */
 
-/* let checkNumber = (number) => {
+let checkNumber = (number) => {
   return new Promise(function (resolve, reject) {
     reject(number > 10);
     resolve(number <= 10);
@@ -16,7 +16,7 @@ checkNumber(13)
   })
   .catch((error) => {
     console.log(`The condition for a number grater than 10 is ${error}.`)
-  }) */
+  })
 
 
 
@@ -24,7 +24,7 @@ checkNumber(13)
 sau nu cuvantul “promise” - se va face reject / resolve in functie de valoarea de adevar a conditiei specificate.
 Apelati functia si folositi consumatorii then si catch pentru a trata ambele cazuri. */
 
-/* const checkString = (str) => {
+const checkString = (str) => {
   return new Promise((resolve, reject) => {
     if (str.includes('promise')) {
       resolve(str);
@@ -40,7 +40,7 @@ checkString('This text contains a')
   .catch((error) => {
     console.log(`${error}.`)
   })
- */
+
 
 /* 4. Creati doua functii care folosesc Promises pentru a putea face o inlantuire (Promise chain). Prima functie,
 capitalizeWords(), va primi ca si argument un array de cuvinte si va aplica o operatiune de capitalize pe acestea.

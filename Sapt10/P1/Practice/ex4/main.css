@@ -1,9 +1,14 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 section{
+    grid-column: 2 / 3;
     background-color: lightgray;
     padding: 10px;
-    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-items: center;
 }
 
 input{

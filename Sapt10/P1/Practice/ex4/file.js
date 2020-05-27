@@ -5,11 +5,13 @@ let theDiv = []
 
 for (let i = 0; i < input.length; i++) {
     theDiv = document.createElement('div');
-    theDiv.style = 'width: 100%; font-size:20px; height: 25px; color:red; backGround : rgba(255, 0, 0, .2); border : thin solid rgba(255, 0, 0, .7)'
-    let parentDiv = inputs[i].parentNode;
+    theDiv.style = 'width: 70%; font-size:20px; height: 25px; color:black, bold; backGround : rgba(255, 0, 0, .2); border : thin solid rgba(255, 0, 0, .7)'
+    let parentDiv = input[i].parentNode;
     parentDiv.insertBefore(theDiv, input[i]);
     theDiv.style.display = 'none';
 }
+
+
 
 const userName = document.querySelector('#userName')
 const userNameFormat = /^[0-9a-zA-Z]+$/;
