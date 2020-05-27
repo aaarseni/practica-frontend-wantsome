@@ -1,31 +1,3 @@
-// updated 2019
-const input = document.getElementById("search-input");
-const searchBtn = document.getElementById("search-btn");
-
-const expand = () => {
-  searchBtn.classList.toggle("close");
-  input.classList.toggle("square");
-};
-
-searchBtn.addEventListener("click", expand);
-
-
-
-
-//  old version / jquery
-//
-// function expand() {
-//   $(".search").toggleClass("close");
-//   $(".input").toggleClass("square");
-//   if ($('.search').hasClass('close')) {
-//     $('input').focus();
-//   } else {
-//     $('input').blur();
-//   }
-// }
-// $('button').on('click', expand);
-//
-
 const input = document.getElementById("search");
 input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
@@ -51,7 +23,7 @@ function searchFoodClick() {
       data.results.forEach(photo => {
         let result = `
           <img src = '${photo.urls.small}'>
-          <a href = '${photo.links.download}'>
+
         `;
 
         $('.infoSection').append(result)
@@ -59,3 +31,5 @@ function searchFoodClick() {
     });
 }
 searchFoodClick();
+
+{/* <a href = '${photo.links.download}'> */}

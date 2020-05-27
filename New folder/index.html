@@ -27,7 +27,8 @@
             </form> -->
             <div class="searchFood">
                 <i class="fa fa-search" aria-hidden="true"></i>
-                <input type='text' placeholder="Search...">
+                <input type='text' id='search' placeholder="Search..." >
+                <button id="myBtn" style='display:none' onclick = 'searchFoodClick()'></button>
             </div>
             <div class="meatOrVeganButton">
                 <p class='gluten'>Gluten free</p>
@@ -260,6 +261,6 @@
     </section>
 </body>
 <script type="text/javascript" src="file.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </html>

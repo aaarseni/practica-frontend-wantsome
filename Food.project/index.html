@@ -25,9 +25,16 @@
                 <input type="text" name="input" class="insert" id="search-input">
                 <button type="reset" class="search" id="search-btn"></button>
             </form>
-            <div  class="searchFood">
-                <input type='text' placeholder="Search">
+
+
+            <div class="searchFood">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type='text' id='search' placeholder="Search..." >
+                <button id="myBtn" style='display:none' onclick = 'searchFoodClick()'></button>
             </div>
+
+
+
             <div class="meatOrVeganButton">
                 <div class='meat'>
                     <input id="s1" type="checkbox" class="switch">
@@ -74,9 +81,8 @@
         </div>
 
 
-        <section class='infoSection'>
-            big meal
-        </section>
+        <div class='infoSection'></div>
+        
     </section>
 </body>
 <script type="text/javascript" src="file.js"></script>

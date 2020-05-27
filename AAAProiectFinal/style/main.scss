@@ -1,0 +1,14 @@
+
+
+
+
+.mainSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr ifr;
+    justify-items: center;
+
+    .infoSection{
+        grid-column: 1 / 2;
+    }
+}
+
