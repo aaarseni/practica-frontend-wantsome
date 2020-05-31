@@ -1,0 +1,9 @@
+h1{
+    padding: 4px;
+}
+
+.mainSection{
+    height: 100vh;
+    border: green 3px solid;
+    margin: 2%;
+}

@@ -35,7 +35,7 @@ const myPost = {
   body: 'lorem ipsum etc',
   userId: 1
 }
-
+ 
 /* const options = {
   method: 'POST',
   body:  body.myPost,
