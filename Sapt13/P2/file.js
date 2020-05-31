@@ -3,25 +3,25 @@
 //Folosind fetch() prima data returnam userii cu id-ul mai mare ca 5
 //.then - returnam user names si city
 //hint nu uitati sa transformati primul raspuns ca si json
-const url = "https://jsonplaceholder.typicode.com/users" 
+/* const url = "https://jsonplaceholder.typicode.com/users" 
 
 fetch(url)
   .then(response => response.json())
   .then(data => data.filter(function(i) { return i.id > 5 })
-  .map(i => console.log(i.username, i.id)))
+  .map(i => console.log(i.username, i.id))) */
 
 /* ex */
   // PRE: create separate module to import fetch function(request) in index.js
 //1. fetch some horror books
 //2. save the ones that have more than 230 pages
 //3. display the ones that have more than one author
-let url = 'https://www.googleapis.com/books/v1/volumes?q=horror';
+/* let url = 'https://www.googleapis.com/books/v1/volumes?q=horror';
 
 fetch(url)
   .then(response => response.json())
   .then(data => console.log(data.items.map(book => book.volumeInfo)
   .filter(book => book.pageCount > 230)
-  .filter(book => book.authors.length > 1 )))
+  .filter(book => book.authors.length > 1 ))) */
 
 
   //EX3
@@ -29,12 +29,12 @@ fetch(url)
 // folosind fetch() vom face un post catre url-ul de mai jos
 // trebuie sa completati in options ce metoda folosim, ce punem in body si ce punem in headers.
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
+/* const url = 'https://jsonplaceholder.typicode.com/posts';
 const myPost = {
   title: 'Javascript Post is awesome',
   body: 'lorem ipsum etc',
   userId: 1
-}
+} */
  
 /* const options = {
   method: 'POST',
@@ -42,7 +42,7 @@ const myPost = {
   headers: title.myPost,
 }; */
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
+/* fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 })
 .catch((error) => {
   console.error('Error:', error);
-});
+}); */
 
 
 //EX2
@@ -98,7 +98,7 @@ console.log(someCookie) */
 //stocatile in 3 variabile diferite
 // folositile pentru a construi un patrat cu ele
 
-localStorage.setItem("width", "100px")
+/* localStorage.setItem("width", "100px")
 localStorage.setItem("height", "100px")
 localStorage.setItem("background-color", "green")
 
@@ -112,7 +112,7 @@ div.style.width = width;
 div.style.height = height;
 div.style.background = background;
 
-document.body.appendChild(div)
+document.body.appendChild(div) */
 
 
 
@@ -125,9 +125,9 @@ document.body.appendChild(div)
 // in functie de rating afisati atatea stele cat are ratingul de exemplu daca ratingul e 3 afisam sub video * * *
 
 function displayVideo () {
-  //let url = require('./world.json');
+  let url = require('./world.json');
 
-  fetch('./world.json' )
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       console.log(data)

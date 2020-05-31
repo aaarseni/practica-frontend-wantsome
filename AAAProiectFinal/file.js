@@ -10,7 +10,7 @@ input.addEventListener("keyup", function (event) {
 function searchFoodClick() {
   let ApiKey = '1WTDmnwKulyV-39XW3CDEWTMqA5PIHpdXH-yV6QapPg';
   let query = document.getElementById('search').value;
-  let url = 'https://api.unsplash.com/search/photos?client_id=' + ApiKey + '&page=1&query=' + query;
+  let url = 'https://api.unsplash.com/search/photos?client_id=' + ApiKey + '&per_page=30&query=' + query;
 
   //make request to api
   fetch(url)
@@ -18,18 +18,42 @@ function searchFoodClick() {
       return data.json();
     })
     .then(function (data) {
-      console.log(data);
-
       data.results.forEach(photo => {
-        let result = `
-          <img src = '${photo.urls.small}'>
-
+        let result = `<li>
+          <img src = '${photo.urls.small}'/></li>
+          
         `;
 
-        $('.infoSection').append(result)
+        $('.photoGrid').append(result)
       });
-    });
-}
-searchFoodClick();
+    })
+/*     .then(function (data) {
+      data.results.forEach(photo => {
+        let result = `<li>
+          <img src = '${photo.urls.large}'/></li>
+          
+        `;
 
+        $('.photoGrid').append(result)
+      });
+    }) */
+    .catch(error => {
+      console.log('Error!');
+      console.error(error);
+    })
+
+}
+
+/* $(url).click(function () {
+  data.results.forEach(photo => {
+    let result = `<li>
+      <img src = '${photo.urls.large}'/></li>
+      
+    `;
+    $('.photoGrid').append(result)
+  });
+});
+ */
 {/* <a href = '${photo.links.download}'> */}
+
+
