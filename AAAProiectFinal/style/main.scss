@@ -32,10 +32,12 @@
         flex-wrap: wrap;
         margin: 0 -8px -8px 0;
         list-style-type:none;
+        cursor: pointer;
         li {
           height: 20vh;
           flex-grow: 1;
           margin: 0 8px 8px 0;
+          cursor: pointer;
         }
         li:last-child {
           flex-grow: 10;
@@ -46,15 +48,19 @@
           object-fit: cover;
           vertical-align: bottom;
           border-radius: 4px;
+          cursor: pointer;
         }
       }
+}
+
+.selected {
+  cursor: pointer;
 }
 
 .carousel-inner{
     height: 90%;
     background-position: center;
     background-position: top 200px;
-
 }
 
 
