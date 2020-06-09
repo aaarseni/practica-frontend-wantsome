@@ -12,6 +12,10 @@
   grid-column: 1 / 2;
 }
 
+.text-center {
+  text-align: left !important;
+}
+
 /* .pageForm{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
@@ -19,6 +23,7 @@
 } */
 #alignButton {
   margin: 0 5px 0 0 !important;
+  padding: 8px 0;
 }
 
 .infoSection {

@@ -1,0 +1,25 @@
+
+
+
+@include media(">=phone", "<tablet") {
+
+}
+
+@include media(">=tablet", "<=950px") {
+
+}
+
+/* Compiles to */
+@media (min-width: 640px) and (max-width: 767px) {
+    #alignButton {
+        margin: 0 5px 0 0!important;
+        padding: 8px 0;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    #alignButton {
+        margin: 0 5px 0 0!important;
+        padding: 8px 0;
+      }
+}

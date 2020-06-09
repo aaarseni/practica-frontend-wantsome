@@ -12,11 +12,13 @@ $('#search').keypress(function (e) {
   if (e.which == 13) {
     e.preventDefault();
     document.getElementById("myBtn").click();
-  }
+  };
 });
 
 
+
 function searchFoodClick() {
+  $('photoGrid').empty();
   let ApiKey = '1WTDmnwKulyV-39XW3CDEWTMqA5PIHpdXH-yV6QapPg';
   let query = document.getElementById('search').value;
   let url = 'https://api.unsplash.com/search/photos?client_id=' + ApiKey + '&per_page=30&query=' + query;
@@ -51,6 +53,7 @@ function searchFoodClick() {
 
         });
       });
+      $('.photoGrid').reset()
     })
     .catch(error => {
       console.log('Error!');
@@ -58,10 +61,6 @@ function searchFoodClick() {
     })
 }
 
-/*  data.results.forEach(photo {
-  marker.setMap(null);
-});
-markers = []; */
 
 {/* <a href = '${photo.links.download}'> 
         <a href = '${photo.urls.full}' />
