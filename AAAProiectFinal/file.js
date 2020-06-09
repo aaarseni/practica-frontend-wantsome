@@ -6,7 +6,9 @@ input.addEventListener("keyup", function (event) {
   }
 }); */
 
-$('#search').submit(function (e) {
+/* onkeydown  cauta methoda de jquery pt cand apasa pe buton enter*/
+
+$('#search').keypress(function (e) {
   if (e.which == 13) {
     e.preventDefault();
     document.getElementById("myBtn").click();
@@ -28,7 +30,6 @@ function searchFoodClick() {
       data.results.forEach(photo => {
         let result = `
         <li>
-  
           <img src = '${photo.urls.small}' alt='${photo.description}'/>
         </li>`;
         $('body').append(result.a)
@@ -37,44 +38,154 @@ function searchFoodClick() {
         $("li").addClass("selected");
 
         $(document).ready(function () {
-
           $(".selected").on('click', function () {
             var image = `${photo.urls.regular}`;
             w2popup.open({
-              title    : 'Image',
-              body     : '<img src="' + image + '"></img>',
-              width    : 1000,
-              height   : 700,
-              opacity  : 0.4,     // opacity for the screen lock div
-              speed    : 0.3,     // popup speed (in seconds)
-              });
+              title: 'Image',
+              body: '<img src="' + image + '"></img>',
+              width: 1000,
+              height: 700,
+              opacity: 0.4,     // opacity for the screen lock div
+            });
           });
 
         });
       });
     })
+    .catch(error => {
+      console.log('Error!');
+      console.error(error);
+    })
+}
+
+/*  data.results.forEach(photo {
+  marker.setMap(null);
+});
+markers = []; */
+
+{/* <a href = '${photo.links.download}'> 
+        <a href = '${photo.urls.full}' />
+      https://api.unsplash.com/collections?page=8
+    */}
+
+
+var ApKey = 'nt45x_DDBltmM_BaDorE44FA00rmNf2OswVyCzZorcs';
+
+function firstCompilation() {
+  let url = 'https://api.unsplash.com/search/photos/?client_id=' + ApKey + '&page=1&per_page=10&query=artistic';
+
+  fetch(url)
+    .then(function (data) {
+      return data.json();
+    })
+    .then(function (data) {
+      console.log(data)
+      data.results.forEach(photo => {
+        let result = `
+        <li>
+          <img src = '${photo.urls.small}' alt='${photo.description}'/>
+        </li>`;
+        $('.firstTypeOfPhoto').append(result);
+
+        $("li").addClass("selected");
+
+        $(document).ready(function () {
+
+          $(".selected").on('click', function () {
+            var image = `${photo.urls.regular}`;
+            w2popup.open({
+              title: 'Image',
+              body: '<img src="' + image + '"></img>',
+              width: 1000,
+              height: 700,
+              opacity: 0.4,     // opacity for the screen lock div
+            });
+          });
+        });
+      });
+    })
+    .catch(error => {
+      console.log('Error!');
+      console.error(error);
+    })
+}
+
+function secondCompilation() {
+  let url = 'https://api.unsplash.com/search/photos/?client_id=' + ApKey + '&page=1&per_page=8&query=animals';
+
+  fetch(url)
+    .then(function (data) {
+      return data.json();
+    })
     .then(function (data) {
       data.results.forEach(photo => {
-        let zoom = `<img src = ${photo.urls.full}/>`
-        $('.infoSection').click.append(zoom);
+        let result = `
+        <li>
+          <img src = '${photo.urls.small}' alt='${photo.description}'/>
+        </li>`;
+        $('.secondTypeOfPhoto').append(result);
+        $("li").addClass("selected");
+
+        $(document).ready(function () {
+
+          $(".selected").on('click', function () {
+            var image = `${photo.urls.regular}`;
+            w2popup.open({
+              title: 'Image',
+              body: '<img src="' + image + '"></img>',
+              width: 1000,
+              height: 700,
+              opacity: 0.4,     // opacity for the screen lock div
+            });
+          });
+        });
+      });
+    })
+    .catch(error => {
+      console.log('Error!');
+      console.error(error);
+    })
+}
+
+function thirdCompilation() {
+  let url = 'https://api.unsplash.com/search/photos/?client_id=' + ApKey + '&page=1&per_page=8&query=city';
+
+  fetch(url)
+    .then(function (data) {
+      return data.json();
+    })
+    .then(function (data) {
+      data.results.forEach(photo => {
+        let result = `
+        <li>
+          <img src = '${photo.urls.small}' alt='${photo.description}'/>
+        </li>`;
+        $('.thirdTypeOfPhoto').append(result);
+
+        $("li").addClass("selected");
+
+        $(document).ready(function () {
+
+          $(".selected").on('click', function () {
+            var image = `${photo.urls.regular}`;
+            w2popup.open({
+              title: 'Image',
+              body: '<img src="' + image + '"></img>',
+              width: 1000,
+              height: 700,
+              opacity: 0.4,     // opacity for the screen lock div
+            });
+          });
+        });
       })
     })
     .catch(error => {
       console.log('Error!');
       console.error(error);
     })
-
 }
 
-/* $(url).click(function () {
-  data.results.forEach(photo => {
-    let result = `<li>
-      <img src = '${photo.urls.large}'/></li>
-      
-    `;
-    $('.photoGrid').append(result)
-  });
-});
- */
-{/* <a href = '${photo.links.download}'> 
-        <a href = '${photo.urls.full}' />*/}
+window.onload = searchFoodClick();
+window.onload = firstCompilation();
+window.onload = secondCompilation();
+window.onload = thirdCompilation();
