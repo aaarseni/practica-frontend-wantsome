@@ -1,16 +1,50 @@
 
 
 /* Compiles to */
-@media (min-width: 640px) and (max-width: 767px) {
+@media (min-width: 340px) and (max-width: 767px) {
     #alignButton {
-        margin: 0 5px 0 0!important;
-        padding: 8px 0;
+      margin: 0 5px 0 0!important;
+      padding: 8px 0;
+    }
+    
+    .displayMainSection {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      .firstSection {
+        grid-row: 1/2;
+        grid-column: 1/4;
       }
+      .secondSection {
+        grid-row: 2/3;
+        grid-column: 1/4;
+      }
+      .thirdSection{
+        grid-row: 3/4;
+        grid-column: 1/4;
+      }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
     #alignButton {
-        margin: 0 5px 0 0!important;
-        padding: 8px 0;
+      margin: 0 5px 0 0!important;
+      padding: 8px 0;
+    }
+
+    .displayMainSection {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      .firstSection {
+        grid-row: 1/2;
+        grid-column: 1/4;
       }
+      .secondSection {
+        grid-row: 2/3;
+        grid-column: 1/4;
+      }
+      .thirdSection {
+        grid-row: 3/4;
+        grid-column: 1/4;
+      }
+    }
 }

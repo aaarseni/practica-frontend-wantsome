@@ -1,14 +1,4 @@
-/* import signUp from './signUp.js';
- */
-/* const input = document.getElementById("search");
-input.addEventListener("keyup", function (event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-  }
-}); */
 
-/* onkeydown  cauta methoda de jquery pt cand apasa pe buton enter*/
 
 $('#search').keypress(function (e) {
   if (e.which == 13) {
@@ -25,8 +15,8 @@ function searchFoodClick() {
   let query = document.getElementById('search').value;
   let url = 'https://api.unsplash.com/search/photos?client_id=' + ApiKey + '&per_page=30&query=' + query;
 
-  
-  //make request to api
+
+  //Request to the Api
   fetch(url)
     .then(function (data) {
       return data.json();
@@ -56,19 +46,13 @@ function searchFoodClick() {
 
         });
       });
-      
+
     })
     .catch(error => {
       console.log('Error!');
       console.error(error);
     })
 }
-
-
-{/* <a href = '${photo.links.download}'> 
-        <a href = '${photo.urls.full}' />
-      https://api.unsplash.com/collections?page=8
-    */}
 
 
 var ApKey = 'nt45x_DDBltmM_BaDorE44FA00rmNf2OswVyCzZorcs';
@@ -192,36 +176,13 @@ window.onload = firstCompilation();
 window.onload = secondCompilation();
 window.onload = thirdCompilation();
 
-/* $('#myform').saveStorage({
-  exclude: ['password','hidden']
-  }); */
-  
-  function store(theForm) {
-    document.getElementById('welcomeMessage').innerHTML = "";
-    var inputUsername= theForm["username"];
-    var inputEmail= theForm['email'];
-    var inputPassword= theForm["password"];
-    localStorage.setItem("username", inputUsername.value);
-    localStorage.setItem('email', inputEmail.value);
-    localStorage.setItem("password", inputPassword.value);
-    document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
-    return false;
-   } // end store()
-//function to sign in
-   function login(theForm) {
-    document.getElementById('welcomeMessage').innerHTML = "";
-    var inputUsername = theForm["username"];
-    var inputEmail= theForm['email'];
-    var inputPassword = theForm["password"];
-    var username = inputUsername.value;
-    var email = inputEmail.value;
-    var password = inputPassword.value;
-    if ((username == localStorage.getItem('username')) 
-    && (email = localStorage.getItem('email'))
-    && (password == localStorage.getItem('password'))) {
-     document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
-      } else {
-     document.getElementById('welcomeMessage').innerHTML = "Invalid Log-in!";
-    }
-    return false;
-   } // end login()
+/* Welcome Sign in div */
+function store() {
+  document.getElementById('welcomeMessage').innerHTML = "";
+  var inputUsername = document.getElementById('orangeForm-name').value;
+  localStorage.setItem("username", inputUsername);
+  document.getElementById('welcomeMessage').innerHTML = "Welcome " + localStorage.getItem('username') + "!";
+  return false;
+} // end store()
+
+document.getElementById('signOut');

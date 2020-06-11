@@ -25,70 +25,70 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" onclick="window.location.reload(true);">Home <span
-                class="sr-only">(current)</span></a>
+            <a class="nav-link" onclick="window.location.reload(true);">Home <span class="sr-only">(current)</span></a>
           </li>
 
           <!-- Form section -->
           <form id="theForm">
-          <div class='pageForm'>
-            <div class='pageForm-container'>
-              <div class='page'>
-                <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog"
-                  aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                          <i class="fas fa-user prefix grey-text"></i>
-                          <input type="text" id="orangeForm-name" class="form-control validate" id="username">
-                          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+            <div class='pageForm'>
+              <div class='pageForm-container'>
+                <div class='page'>
+                  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header text-center">
+                          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
-                        <div class="md-form mb-5">
-                          <i class="fas fa-envelope prefix grey-text"></i>
-                          <input type="email" id="orangeForm-email" class="form-control validate" id='email'>
-                          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-                        </div>
+                        <div class="modal-body mx-3">
+                          <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="orangeForm-name" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                          </div>
+                          <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="orangeForm-email" class="form-control validate" id='email'>
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                          </div>
 
-                        <div class="md-form mb-4">
-                          <i class="fas fa-lock prefix grey-text"></i>
-                          <input type="password" id="orangeForm-pass" class="form-control validate" id="password">
-                          <label data-error="wrong" data-success="right" for="orangeForm-pass" >Your password</label>
-                        </div>
+                          <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <input type="password" id="orangeForm-pass" class="form-control validate" id="password">
+                            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                          </div>
 
-                      </div>
-                      <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-deep-orange" >Sign up</button>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                          <button class="btn btn-deep-orange" onclick="store()">Sign up</button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- Modall button -->
-                <div class="text-center">
-                  <a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
-                    data-target="#modalRegisterForm" class="d-flex justify-content-start" id='alignButton'>Sign in</a>
+                  <!-- Modall button -->
+                  <div class="text-center">
+                    <a href="#" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+                      data-target="#modalRegisterForm" class="d-flex justify-content-start" id='alignButton'>Sign in</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
 
 
           <!-- Search button -->
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id='search' type="search" placeholder="Search for Photos" aria-label="Search">
-            <button class="btn btn-outline" id="myBtn" 
-              onclick='searchFoodClick()' >Search</button>
+            <input class="form-control mr-sm-2" id='search' type="search" placeholder="Search for Photos"
+              aria-label="Search">
+            <button class="btn btn-outline" id="myBtn" onclick='searchFoodClick()'>Search</button>
           </form>
       </div>
-      <div id='welcomeMessage'>wel</div>
+
+      <div id='welcomeMessage'></div>
     </nav>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -118,21 +118,34 @@
   </header>
 
   <section class="displayMainSection">
-    <div><h3>Be your artist!</h3><ul class='firstTypeOfPhoto' onload="firstCompilation()"></ul></div>
-    <div><h3>Be urban!</h3><ul class='secondTypeOfPhoto' onload="secondCompilation()"></ul></div>
-    <div><h3>Feel free!</h3><ul class='thirdTypeOfPhoto'   onload="thirdCompilation()"></ul></div>
-<!--     <div class="forthContainer"  onclick="firstCompilation()">
-      <ul class='firstTypeOfPhoto'></ul></div> -->
-  </section id='myPhoto'>
-    <form>
+    <div class='firstSection'>
+      <h3>Be your artist!</h3>
+      <ul class='firstTypeOfPhoto' onload="firstCompilation()"></ul>
+    </div>
+    <div class='secondSection'>
+      <h3>Feel free!</h3>
+      <ul class='secondTypeOfPhoto' onload="secondCompilation()"></ul>
+    </div>
+    <div class='thirdSection'>
+      <h3>Be urban!</h3>
+      <ul class='thirdTypeOfPhoto' onload="thirdCompilation()"></ul>
+    </div>
+  </section>
+
+  <form>
     <div class='infoSection' onload="searchFoodClick()">
-      <h3  display='hidden'>Choose your Photo!</h3>
+      <h3>Choose your Photo!</h3>
       <ul class="photoGrid"></ul>
     </div>
   </form>
-    <footer >
-      &copy;AARse 2020
-    </footer>
+  
+  <footer>
+    <div class='signOutButton'>
+      <button type="button" class="btn btn-outline-dark" id='signOut' onclick="window.location.reload(true);">Sign
+        Out</button>
+    </div>
+    <div>&copy;AARse 2020</div>
+  </footer>
 
 
 </body>
