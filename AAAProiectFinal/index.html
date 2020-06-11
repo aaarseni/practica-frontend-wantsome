@@ -25,11 +25,12 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#" onclick="window.location.reload(true);">Home <span
+            <a class="nav-link" onclick="window.location.reload(true);">Home <span
                 class="sr-only">(current)</span></a>
           </li>
 
           <!-- Form section -->
+          <form id="theForm">
           <div class='pageForm'>
             <div class='pageForm-container'>
               <div class='page'>
@@ -46,18 +47,18 @@
                       <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                           <i class="fas fa-user prefix grey-text"></i>
-                          <input type="text" id="orangeForm-name" class="form-control validate">
+                          <input type="text" id="orangeForm-name" class="form-control validate" id="username">
                           <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
                         </div>
                         <div class="md-form mb-5">
                           <i class="fas fa-envelope prefix grey-text"></i>
-                          <input type="email" id="orangeForm-email" class="form-control validate">
+                          <input type="email" id="orangeForm-email" class="form-control validate" id='email'>
                           <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
                         </div>
 
                         <div class="md-form mb-4">
                           <i class="fas fa-lock prefix grey-text"></i>
-                          <input type="password" id="orangeForm-pass" class="form-control validate">
+                          <input type="password" id="orangeForm-pass" class="form-control validate" id="password">
                           <label data-error="wrong" data-success="right" for="orangeForm-pass" >Your password</label>
                         </div>
 
@@ -77,7 +78,7 @@
               </div>
             </div>
           </div>
-
+        </form>
 
 
           <!-- Search button -->
@@ -87,6 +88,7 @@
               onclick='searchFoodClick()' >Search</button>
           </form>
       </div>
+      <div id='welcomeMessage'>wel</div>
     </nav>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -128,8 +130,8 @@
       <ul class="photoGrid"></ul>
     </div>
   </form>
-    <footer>
-
+    <footer >
+      &copy;AARse 2020
     </footer>
 
 
@@ -146,5 +148,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.2.min.js"></script>
 
+<!-- form jquery -->
+<script src="/path/to/jquery.min.js"></script>
+<script src="/path/to/savestorage.js"></script>
 
 </html>

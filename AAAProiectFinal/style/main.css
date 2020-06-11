@@ -1,3 +1,18 @@
+/* Compiles to */
+@media (min-width: 640px) and (max-width: 767px) {
+  #alignButton {
+    margin: 0 5px 0 0 !important;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  #alignButton {
+    margin: 0 5px 0 0 !important;
+    padding: 8px 0;
+  }
+}
+
 .mainSection {
   display: -ms-grid;
   display: grid;
@@ -23,7 +38,7 @@
 } */
 #alignButton {
   margin: 0 5px 0 0 !important;
-  padding: 8px 0;
+  /* padding: 8px 0; */
 }
 
 .infoSection {
@@ -79,7 +94,11 @@
   text-align: center;
 }
 
-.selected {
+.listCreate {
+  cursor: pointer;
+}
+
+.presentSection {
   cursor: pointer;
 }
 
@@ -209,5 +228,21 @@
      object-fit: cover;
   vertical-align: bottom;
   border-radius: 4px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-size: 10px;
+  height: 2%;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

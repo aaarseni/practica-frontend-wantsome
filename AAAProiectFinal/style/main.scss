@@ -59,7 +59,10 @@
   }
 }
 
-.selected {
+.listCreate {
+	cursor: pointer;
+}
+.presentSection {
 	cursor: pointer;
 }
 
@@ -147,4 +150,14 @@
 			border-radius: 4px;
 		}
 	}
+}
+
+footer{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 10px;
+    height: 2%;
+    background-color: white;
 }
